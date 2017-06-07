@@ -3,10 +3,14 @@ import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'my-app',
-  template: `<pp-header></pp-header>
-  			
+  template: `<div class="content">
+  			<div class="content-header">
+  			</div>
   			<!-- Routed views go here -->
-			<router-outlet></router-outlet>`,
+			<div class="content-body">
+			<router-outlet></router-outlet>
+			</div>
+			</div>`,
 })
 
 export class AppComponent {

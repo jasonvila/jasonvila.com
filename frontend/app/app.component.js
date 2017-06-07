@@ -12,10 +12,14 @@ let AppComponent = class AppComponent {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: `<pp-header></pp-header>
-  			
+        template: `<div class="content">
+  			<div class="content-header">
+  			</div>
   			<!-- Routed views go here -->
-			<router-outlet></router-outlet>`,
+			<div class="content-body">
+			<router-outlet></router-outlet>
+			</div>
+			</div>`,
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

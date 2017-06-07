@@ -9,4 +9,4 @@ app/*.pyc
 npm-debug.log
 
 # node modules
-node_modules
+frontend/node_modules

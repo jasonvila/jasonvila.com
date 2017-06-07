@@ -1,0 +1,32 @@
+.about-content{
+	display:inline-block;
+	max-width: 50%;
+}
+.about-img{
+	float: right;
+	display: inline-block;
+	max-width: 50%;
+}
+.about-hello{
+	display:block;
+	margin: auto;
+	width: 250px;
+	padding: 0px 0px 10px 0px;
+}
+.about-quote{
+	max-width: 80%;
+	margin: auto;
+	text-align: center;
+}
+.list-group{
+	max-width: 90%;
+}
+
+@media(max-width: 1000px){
+	.about-img{
+		display:none;
+	}
+	.about-content{
+		max-width: 100%;
+	}
+}
