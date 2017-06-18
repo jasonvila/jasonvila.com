@@ -1,19 +1,25 @@
 
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 
 def create_app():
-	app = Flask(__name__)
+	application = Flask(__name__)
 	
-	app.debug = True
-	app.testing = True
+	application.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://ppdb'
 
-	# from app.api import create_api_endpoints
-	# create_api_endpoints(app)
+	application.debug = True
+	application.testing = True
 
-	from app.views import frontend
-	app.register_blueprint(frontend)
+	from models import database
+	database.init_app(application)
 
-	return app
+	from api import create_api_endpoints
+	create_api_endpoints(application)
+
+	from views import frontend
+	application.register_blueprint(frontend)
+
+	return application
 
 application = create_app()
 
