@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 def create_app():
 	application = Flask(__name__)
 	
-	application.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://ppdb'
+	application.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///jvdb'
 
 	application.debug = True
 	application.testing = True

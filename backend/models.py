@@ -10,10 +10,8 @@ class Blog(database.Model):
     title = database.Column(database.String, unique=True)
     category = database.Column(database.String)
     date = database.Column(database.String)
-    Content = database.Column(database.String)
+    content = database.Column(database.String)
 
     def __repr__(self):
-        return '{"Blog" : {"title": %r, "category": %r, "date": %r, "content": %r, "contact":' \
-               ' %r}}' %\
-               (self.title, self.title, self.category, self.date,
-                self.content)
+        return '{"Blog" : {"title": %r, "category": %r, "date": %r, "content": %r}}' %\
+               (self.title, self.category, self.date, self.content)
