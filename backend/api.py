@@ -9,3 +9,6 @@ def create_api_endpoints(app):
     """ Create API endpoints available at /api/<tablename> by default """
     manager = APIManager(app, flask_sqlalchemy_db=models.database)
     manager.create_api(models.Blog, results_per_page=0)
+    manager.create_api(models.App, results_per_page=0)
+    manager.create_api(models.Data, results_per_page=0)
+    manager.create_api(models.Misc, results_per_page=0)

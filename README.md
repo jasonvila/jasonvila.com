@@ -32,3 +32,13 @@ use sqlalchemy to connect to postgresql
 backend - python/flask_sqlalchemy application
 frontend - nodejs/angular2 application
 
+python3 - for ubuntu
+python - for windows
+
+backend apis
+------------
+
+blogs: localhost:5000/api/blog
+apps: localhost:5000/api/app
+data: localhost:5000/api/data
+misc: localhost:5000/api/misc
