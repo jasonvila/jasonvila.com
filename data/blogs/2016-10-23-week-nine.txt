@@ -1,0 +1,46 @@
+---
+layout: post_cs373
+title: Week 9 - October 17th Week Blog
+permalink: /cs373/week-9
+categories: cs373
+---
+
+On the topic of CS373.
+
+Core Questions:
+
+~~ What did you do this past week? ~~
+
+This past week was entirely composed of working on the project. A brutal and almost hopeless task, my team and I managed to persevere through all of the objectives. While phase didn't appear intimidating at first, the requirements certainly piled on as the due date grew closer. I also spent a lot of time attending class and finishing the readings, but the primary objective pertained mostly towards completing the project.
+
+
+
+~~ What is in your way? ~~
+
+The other courses are definitely beginning to pile on. The additional work is starting to seriously get in the way of making core contributions to finishing the projects effectively. Also, a lot of personal obligations continue to be an obstacle. I was hoping to perform better on the crypto test and the projects, but I suppose I can only do so much in one week.
+
+
+
+~~ What will you do next week? ~~
+
+I'll be playing catchup next week. I'm so behind in the projects, its actually starting to scare me. I guess it wouldn't be a problem if there wasn't so many small issues. I suppose I'll need to focus myself on ensuring that we finish the core parts of the website before worrying about all of the small details. Also, I'll definitely be attending class and completing the assigned readings.
+
+
+
+~~ My experiences with CS373 this week: ~~
+
+This week was a little disappointing... Not to say that the material in the lectures weren't interesting, just my performance towards this and other classes was not up to par to what I was hoping for. The material over callables, select, project, and joins were very interesting and seemed extremely relative to the projects at hand, and that was worth while. The issue mostly leaned toward the confusion my team faced while finishing the project.
+
+
+
+~~ My reactions to CS373 material this week: ~~
+
+My reaction to the material this week was partially confused, but definitely felt that the material will be and is already rewarding. I have experience in SQL programming, but the material given in the lectures was a new flavor of database management that helped give me more excitement.
+
+
+
+~~ Tip of the Week: ~~
+
+When you are building a website, always be sure to know all of the tools of trade. The majority of the work will be learning and adopting the tools, not so much the development. Developing before understanding the tools will lead to far more wasted time and confusion than just spending the time to fully grasp the nature of those tools. Also, there are a lot of useful tools on Slack that can be helpful to ensuring efficient communication in between your team members.
+
+

@@ -1,0 +1,38 @@
+---
+layout: post_cs371p
+title: Week 5 - February 21st Week Blog
+permalink: /cs371p/week-5
+categories: cs371p
+---
+
+On the topic of CS371P.
+
+Core Questions:
+
+1. What did you do this past week?
+
+This previous week's focus has been primarily centralized around the consistency and preparation of the upcoming test next week. With all of the book material, the c++ class notes, the projects, and readings, the amount of content that needs to be absorbed seems to be overwhelming for only one week of studying to handle. Catching up on Object Oriented Programming material was the key goal and ambition as a attempt to do well on next week's test.
+
+2. What is in your way?
+
+There aren't a lot of obstacles in my way. The previous week was horrendeous, so naturally this week became a catch up on sleep as well as homework. Waking up early in the morning to get the studying and readings done has been fairly challenging lately, where I've felt chained to my bed. I need to stop being so passive and push myself to attain the studying they I want to accomplish before the test.
+
+3. What will you do next week?
+
+Next week will luckily be not so terrible. The only thing I have this upcoming week is this test and a few project meetings. So this next week will mostly consist of test reviewing and studying. I will do my best to dedicate time to accomplish the material review.
+
+
+My experiences with CS371P this week:
+
+Every week is always a surprise and fun experience. Last week we learned quite a bit about assigning functions to variables using auto and other exchangable formats. Also this week we had a speaker visit the classroom and talk about the world of open source development, its benefits on your professionalism, and the wonders of how the open source work can help elevate the productivity of your own work and the work of the company you're working for. The experiences were certainly fun and engaging, where the examples and lectures gave in depth explanations about variables saving functions/methods. The speaker was an exiting experience too, which helped me feel that I needed to start dedicating myself to the open source world.
+
+My reactions to CS371P material this week:
+
+I felt a mix of surprise and content, as the lectures and the speaker gave great advice and in depth knowledge of not only objet oriented programming but professional contributions to the software industry. I felt more engaged and equipped to begin moving towards accomplishing the software design goals that I've set aside for myself.
+
+Tip of the Week:
+
+When you are pair programming with one or two other individuals, always be sure to bring food or drinks to ensure productivity. The contribution of this fuel helps a long ways in keeping the mind and body in tact with the goals and obligations of that time. Without the fuel you need, you'll lose the energy, patience, and creativity that you so desperately need to get that project done (or bug fixed).
+
+
+

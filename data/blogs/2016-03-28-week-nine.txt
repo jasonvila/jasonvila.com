@@ -1,0 +1,37 @@
+---
+layout: post_cs371p
+title: Week 9 - March 28th Week Blog
+permalink: /cs371p/week-9
+categories: cs371p
+---
+
+On the topic of CS371P.
+
+Core Questions:
+
+1. What did you do this past week?
+
+Spring Break brings peace and comfort, but the return of stress and anxiety will always come back in the light. The hour upon arriving back into Austin, I had to spend the majority of the day and night working with my partner on the OOP project (which was due that following Thursday). Luckily, my partner and I managed to have a good grasp of the concepts and expectations of the project, so implementing the solution was nearly a breeze. The days afterward mostly composed of reading about the evils of extends as well as listening to lectures about the different uses of constants and array types with in the object oriented structure of c++. 
+
+
+2. What is in your way?
+
+While this class provides many challenges of its own, the remainder of my courses do pose a heavy workload that doesn't amount to nearly as much of a good ratio of reward to work spent as this course does. Alongside the other courses, the follow up of Easter, Spring Break, Rez Week, and a Christian retreat creates a deterrence from focusing solely on Object Oriented material.
+
+3. What will you do next week?
+
+Next week, I'll be starting the next project with my partner. The project will be composed of writing classes for a game/competition platform. I think it'll be interesting to construct, especially since my next partner specializes in game development. The next week will also be very fun to learn about vectors, their attributes and functionality. As vectors as one of my favorite datatype, its exciting to get the opportunity to learn the inner and outer details of Vectors.  
+
+My experiences with CS371P this week:
+
+My experience this week with CS371P felt a bit rushed. With the project due, the readjustment into school, and with Easter this weekend, it was difficult finding the time to complete my projects, attend lecture, and do the readings while also managing to get any sleep. As is all of the lectures, I found the material being taught very applicable. I've never had the opportunity to be taught about the uses and reasoning behind the system of constants and arrays in c languages. Every lecture seems to help me grow in my understanding around typical object oriented topics that I have a hard time wrapping my head around. 
+
+My reactions to CS371P material this week:
+
+The material in CS371P this week is, as always, very exciting. It has been confusing and frustrating for me to have to research about constants and treatment towards arrays for the longest time, but the material this week cleared my bewilderment in those subjects. I also feel more professional knowing about some of the cons and pros of using extends.
+
+Tip of the Week:
+
+Be very careful not to ever do a free over a region of memory that has already been freed and coallesced to a larger malloc'd block, otherwise your program may be vulnerable to attacks. If a attacker knew the that your program had a region that was freeing over a already freed region, they could take advantage of your program by manipulating the header of the freed block with the input they put in. I won't go into detail of how, because I don't want to encourage anyone to undertake a goal in abusing the process, but be sure to always set the pointer to null if you free a already freed block that is then coallesced to a larger allocated block.
+
+

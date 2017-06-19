@@ -1,0 +1,47 @@
+---
+layout: post_cs373
+title: Week 6 - September 26th Week Blog
+permalink: /cs373/week-6
+categories: cs373
+---
+
+On the topic of CS373.
+
+Core Questions:
+
+~~ What did you do this past week? ~~
+
+In terms of SWE, the majority of my energy and time went towards the readings, preparing for the test, and attending class. We have the test that's coming up next Thursday, and really, I'm not very sure if I should be extremely intimidated or not. I'll probably be fine with how much time I've spent with the projects and SWE material so far though.
+
+
+
+~~ What is in your way? ~~
+
+As always, I have a lot of organizational commitments as well as several projects due this week. Of course if I didn't need sleep, it would be easier to take care of all of the reading assignments and material at ease. I think this week was handled fairly well, so I wouldn't really consider any of my outside commitments to be jeopardizing my performance in SWE.
+
+
+
+~~ What will you do next week? ~~
+
+Next week will be very rough... but I'll surely be able to finish all the assignments and prepare for the test. Even though attending class lectures are important this week, preparing for the upcoming test will be the primary focus. Catching up on the reading assignments that I missed may be the third highest priority for this week, but I'm not entirely sure how much time I'll be able to put in to the readings this week.
+
+
+
+~~ My experiences with CS373 this week: ~~
+
+My experiences this week are similar to my experiences from last week. The lectures are fulfilling and surprising with all of Python's hidden behaviors. Surely knowing the nature and underlying construction of Python, the lectures are critically important to my understanding of Python.
+
+
+
+~~ My reactions to CS373 material this week: ~~
+
+My reaction is happy and surprised, partly because of how many Python libraries are really written in C. I'm sure much of the material, especially with the odd exceptional behaviors, will be on the test.
+
+
+
+~~ Tip of the Week: ~~
+
+Whenever you want to have multiple activities on a single page (for Android), I would recommend looking up frames. There was an issue a few years ago to having a single screen share several activities, and fragments are google's answer to the issue. if you're in need of dynamic UI on Android, fragments are the way to go.
+
+
+

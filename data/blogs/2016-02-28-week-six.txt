@@ -1,0 +1,42 @@
+---
+layout: post_cs371p
+title: Week 6 - February 28th Week Blog
+permalink: /cs371p/week-6
+categories: cs371p
+---
+
+On the topic of CS371P.
+
+Core Questions:
+
+1. What did you do this past week?
+
+This past week has been crammed with organzing the end of the year concert, spring break, and studying for the Object Oriented programming exam. While the majority of the time spent went to the extracurricular part of my life, a great amount of time was poured into doing the readings and reviewing the class content before the exam this last friday. 
+
+2. What is in your way?
+
+Nothing was particularly in my way this week, but the exam was definitely a lot harder than I anticipated for. The exam didn't include any multiple choice questions like I had expected. In fact, the exam was only a couple of very precise questions from the readings and the remaining questions but definitely copious in work compared to the time we had to complete the exam. I feel like the exam was definitely a hour and 15 minute exam crammed into a 50 minute exam. Perhaps the one thing in my way in succeeding in this exam was the ability to write and adapt to new problems in a quick manner. Preparing for a few problems that encourage growth in the knowledge of the topic would've certainly helped me prepare better. One other obstacle seemed to be my attitude, as right before the test the alorithm and complexity course exam grades were released, and they were pretty brutally graded for the most part. The sheer disappointment in the class average probably inhibited any expression of hope in the OOP exam.
+
+3. What will you do next week?
+
+Next week will be very tough, but not in terms of the material in OOP. Hopefully, this next week will allow me to get somewhere between 5 to 7 hours each night. I have two tests, a project, a essay, and a assignment due this upcoming week. My weekend will be totally winded down towards preparing for this dreadful week.... I will, however, be excited to go back to OOP lecture and doing the readings, because the class is seriously genuinely interesting.
+
+
+My experiences with CS371P this week:
+
+It was probably more full of dread and despair than anything else. The lectures were cool and fun, where lambdas were the core topic aside from the test, but the test left me in unease and utter disappointment in my abilities to recall book content and material (eventhough the book based  questions were only 1/11 of the test grade).
+
+
+My reactions to CS371P material this week:
+
+My reaction was mostly excited, relaxed, and inspired, since this week seemed to be easy going. With the test grades returning and the test I just took, the reaction really went down hill. I need to just accept the fact that these tests are the core of my education, and so I'll be working on making sure to rely on enjoying the class despite what ever grade I get.
+
+
+Tip of the Week:
+
+So one big tip for all of those javascript wannabes:
+
+Whenever you are using a function inside of window.setTimeout, window.onload, etc., be sure to not include the parenthesis. Whenever the function is receiving a function to be executed later, passing the function in as a argument or saving it to a variable will cause it to execute immediately if and only if the programmer passes it with the parenthesis. If there are no parenthesis, then the objects/functions that receive the function object will execute properly and on a timely manner.
+
+
+

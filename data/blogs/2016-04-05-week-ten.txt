@@ -1,0 +1,36 @@
+---
+layout: post_cs371p
+title: Week 10 - April 3rd Week Blog
+permalink: /cs371p/week-10
+categories: cs371p
+---
+
+On the topic of CS371P.
+
+Core Questions:
+
+1. What did you do this past week?
+
+This past week was very calm, where there was hardly any OOP material that was due. The majority of the OOP work was the project that is due the next week and the lectures about Vectors and Atlassian. My partner and I met up a few times to get the project planned out, but no essential progress to the actual code base itself. Sadly, it looks like this project will be a bit of a nightmare, for it has so much detail to it. The lectures weren't too involved, mostly a introduction to the Darwin project, the presentation by Atlassian, and a introduction to the infrastructure of Vector. It seemed like a somewhat unproductive week, but the papers were interesting. They made a lot of sense, especially from a security point of view, but they also opposed my understanding of the purpose of a lot of Object Oriented Programming.
+
+2. What is in your way?
+
+The only thing that continues to be in the way is the other programming courses, where I have a major grade in all three of my programming classes due next week. The matter of the fact that each of these classes have been very costly to my time makes it hard to focus on each course individually. Also Rez week was a core candidate that absorbed a great deal of my time. Perhaps I am a bit too dedicated to my religious and out door pursuits, but its what keeps me happy. I think that having Rez week and my organization involvement is what keeps me calm and happy in the long run, so that probably effects my work ethics in this course ina  positive manner.
+
+3. What will you do next week?
+
+Next week will be a dramatic rush to get the project done. Despite there being a project and a test in my other classes due that same week, it might be hard for me to find time. Also my partner is showing a promising appeal to work on this early, so hopefully it won't be a terrible nightmare. Of course, I'll be reading and attending the lectures, I don't exactly have a reason not to attend or read anyway.
+
+My experiences with CS371P this week:
+
+It was a calming and encouraging week for me. Hearing about vectors, one of my favorite datastructures, getting a chance to relax and hear a company give advice on agile development, and finding out that the next project will be pretty much developing a game, my confidence in the productivity of this class was boosted. I had fun reading the articles that was against getters and setters too, where I am starting to realize the security holes in Object Oriented Programming. 
+
+My reactions to CS371P material this week:
+
+This week brought out the excitement I have for Object Oriented Programming. Vectors and game development are both extremely attractive topics to me, and getting a chance to dive into both topics brings out a bit of the inner child in me.
+
+Tip of the Week:
+
+If you ever have trouble avoiding the use of getters and setters, consider using operator overloads, manipulating return values, and even using helper methods to improve the method communication and private variable manipulation of different classes. Through these different approaches, it can be a little tedious but you'll have a very powerful library of tools for your class that protect your program from exposing its security holes.
+
+

@@ -1,0 +1,47 @@
+---
+layout: post_cs373
+title: Week 2 - August 29th Week Blog
+permalink: /cs373/week-2
+categories: cs373
+---
+
+On the topic of CS373.
+
+Core Questions:
+
+~~ What did you do this past week? ~~
+
+With the syllabus day out of the way, every one of my professors have felt obliged to give out a variety of assignments. In particular, this past week has been full of starting new projects and finishing several first homework and reading assignments. While they were not very strenuous in nature, the homeworks and readings did take up a great deal of time.
+
+
+
+~~ What is in your way? ~~
+
+With last weekend being labor day weekend and my gf's birthday, I didn't have a chance to spend much time getting ahead on homework this weekend. Normally I need the weekends to catch up on homework, since I spend the majority of the weekdays at organization events. I'll need to find a way to spare time during this week to accomplish/finish all of the assignments that are due this upcoming week.
+
+
+
+~~ What will you do next week? ~~
+
+This next week will be cluttered with finishing the projects. I might not have time to complete the readings, but I may be able to do most of the given readings. With Collatz due on Thursday and several other homeworks due this week, it'll be a little difficult to work around my organization events to accomodate for finishing the programming. Of course, I'll also be spending time this week to attend every lecture, Mr. Downing is too entertaining to miss.
+
+
+
+~~ My experiences with CS373 this week: ~~
+
+I've had positive experiences this week with the lectures and readings. Nothing was due in SWE this week, but all of the lectures have contributed a great deal of useful knowledge for testing and writing optimal programs. There were some laughs in there too, but I mostly enjoyed learning about white/black box testing and optimizing Collatz.
+
+
+
+~~ My reactions to CS373 material this week: ~~
+
+The material taught this week is still very similar to the material taught in OOP, so there weren't necessarily any surprises. I enjoyed the reminders that Mr. Downing gave on the testing and optimizing of Collatz, but I felt a bit stressed with the fact that we'll have to accomodate a third optimization in Collatz to pass Sphere.
+
+
+
+~~ Tip of the Week: ~~
+
+Even though you can probably finish a project in one night, its always best to work on the assignments ahead of time, so you can digest the issues in your project in ease. Its extremely stressful designing software when you don't have the time or comfort to think through the issues. Without the stress or discomfort, you can easily dissect the issue and finish your assignments on time, that is if you start early. Always start early, my friends.
+
+
+

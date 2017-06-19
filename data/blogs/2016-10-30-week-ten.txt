@@ -1,0 +1,46 @@
+---
+layout: post_cs373
+title: Week 10 - October 24th Week Blog
+permalink: /cs373/week-10
+categories: cs373
+---
+
+On the topic of CS373.
+
+Core Questions:
+
+~~ What did you do this past week? ~~
+
+This past week seemed to be a lot calmer and easier than the previous weeks. Not only was one of the lectures cancelled, but another one was given by Pariveda Solutions. Essentially, this week only had one challenging lecture, which revolved around regular expressions. Studying regular expressions, finishing the reading assignments, and creating scrapers for the project are what took the majority of this last week though.
+
+
+
+~~ What is in your way? ~~
+
+The data scraping for the project has been more difficult than I previous thought it would be. Due to the variety of APIs for the project, merging the data between the APIs has been a core issue. I suppose the difficulty of the task of collecting data is derailing my productivity in this class. Also organizations and leaving Austin for the weekend has hindered my ability to provide the effort and time to continue to focus on the course material. I feel that going home and attending the organizational events is helping me maintain a healthy manner of approaching these assignments.
+
+
+
+~~ What will you do next week? ~~
+
+Next week will compose mostly of finishing project 5, making the website dynamic. This will be mostly writing programs for data scraping and massaging the data so that the backend team can insert the data into the database. With the number of APIs and the variety of pillars of information we're providing, this may very well be a daunting task, but I'm sure we'll be able to accomplish it. I'll also be completing the readings and attending lecture.
+
+
+
+~~ My experiences with CS373 this week: ~~
+
+My experiences with CS373 this week was pretty fantastic, but not as useful as the others. We only really had, in my opinion, one useful lecture. I hardly know anything about Regex, but Downing did a great job of explaining the basics to the class. I know that this material will be extremely useful in the future. As far as the presentation from Pariveda Solutions, I didn't feel extremely compelled to ask any questions, I just felt that the company repeated a lot of the key points that the other company presentations have given.
+
+
+
+~~ My reactions to CS373 material this week: ~~
+
+I was extremely surprised and slightly confused while Downing went over the Regex material. Lots of the semantics seem to be common sense, but there are a lot of rules that don't really seem to be easy to understand. I enjoyed listening to the Pariveda Solutions presentation, but once again, I didn't feel all that impacted by what they offered as far as advice.
+
+
+
+~~ Tip of the Week: ~~
+
+When ever you are developing a program that needs to use a map, I would highly suggest using the Google Maps API. Google provides an array of APIs that are can save programmers hundreds of hours. For me, I had to sue the Google Map API for developing an Android app based game, and without the Google Map API, the augmented reality aspect of the game would be impossibly difficult to use. In order to use Google's APIs, you need to be sure to register for an API key and install the proper software that supports receiving or using the APIs. Luckily, Google API keys can be reused for other Google APIs, so the number of keys generated or used can be condensed (avoiding having to reregister for more keys).
+
+

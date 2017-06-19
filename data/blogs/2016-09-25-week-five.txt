@@ -1,0 +1,47 @@
+---
+layout: post_cs373
+title: Week 5 - September 19th Week Blog
+permalink: /cs373/week-5
+categories: cs373
+---
+
+On the topic of CS373.
+
+Core Questions:
+
+~~ What did you do this past week? ~~
+
+This past week was full of finishing the Netflix project, reading assignments, and attending Downing's lectures. It was really fascinating to have the employee from JPL present the project that they've been working on. I never knew the bounds and sophistication of some of the software that has been developed until then. The majority of my time went to the Netflix project though, so hopefully I'll transition that time over to working on studying for the upcoming test.
+
+
+
+~~ What is in your way? ~~
+
+This week was just really busy with other course projects and tests. If the other courses didn't have the projects or tests all at the same time, I probably would have more time to spend on reviewing and learning about software engineering. The organization meetings and personal issues have really died down lately, so that's been helpful in maintaining my work load this week.
+
+
+
+~~ What will you do next week? ~~
+
+This next week will comprise mostly of studying and prepping for the upcoming test. I know there are lectures and readings to do, but reviewing the material and projects we've accomplished (as well as quizzes) will probably assist in ensuring I can do well on the test next week. I suppose this means that I'll be meeting with classmates to form study groups and study sessions.
+
+
+
+~~ My experiences with CS373 this week: ~~
+
+This week was fun, especially with implementing Netflix. Netflix was a fascinating (and not as hard) project that really showed how simple some issues can be to fix. The articles and readings were useful (also dramatic), in reminding me of precision in programming, javascript, and sql management. I'm very excited to start applying these readings to the future group projects, which is the real reason I'm a part of this class.
+
+
+
+~~ My reactions to CS373 material this week: ~~
+
+I was surprised by the presenter from JPL, to learn more about the Python semantics, and see some of the underlying behaviors of Python. Downing always has a great way of presenting and explaining some of the issues and exceptions that are in Python. The Netflix material was certainly stressful at first, but made me feel accomplished and at ease near the end. I suppose this week was more of a confident and excited reaction to the material given.
+
+
+
+~~ Tip of the Week: ~~
+
+When designing android apps, be very careful about the objects created and destroyed. Sometimes maintaining or updating objects will take twice as long as they should, but there are many optimizations out there that keep you from recreating an object (or view in this case). One particular case that is often missed is when you create listviews, always be sure to check the view exists before creating a new view in the getView method. This alone can surely make your app work twice as fast.
+
+
+

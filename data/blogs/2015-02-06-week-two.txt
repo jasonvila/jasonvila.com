@@ -1,0 +1,44 @@
+---
+layout: post_cs371p
+title: Week 2 - January 31st Week Blog
+permalink: /cs371p/week-2
+categories: cs371p
+---
+
+On the topic of CS371P.
+
+Core Questions:
+
+1. What did you do this past week?
+
+2. What is in your way?
+
+3. What will you do next week?
+
+
+My experiences with CS371P this week:
+
+The week of January 31st appeared to be a rather busy week with the projects and new material. While the lectures alone provided key information about exceptions and incrementation in C++, which caused me to be a bit in awe on the topics, the biggest priority was to complete the first project on time. With a combination of career fairs, recruiting events, and other class projets, finding the time to dedicate to this project was quarrelsome, much of which led to a few nights with little to no sleep. Through several dozen hours of learning the systems, much of included Travis CI, github, Google Tests, etc., I felt confident in the progress of the project. 
+
+The challenge definitely didn't seem to be programming the Collatz problem in c++, since all that the assignment required was a simple solution with a cache. Even the cache didn't seem to be entirely challenging, as it was supposed to be a build of your simplest cache into a improved state. Making sure the systems being used on the Collatz assignment were operating properly was more of a challenge, since the software can be buggy and in the way sometimes.
+
+The biggest time consumer, however, was trying to get the Sphere tests to pass. Although Sphere indicated the project had the right answers, the timing continued to be exceeded by a small amount. Creating a meta cache probably would have accomplished this goal, however, the due date deadline for the project was all too near to upgrade the cache. 
+
+I would've managed to get the proper cache working if I had dedicated more time to the project earlier on, but I couldn't blame myself for that. With all of the organizations starting up the week before, I could hardly do my homework, much less breathe. Certainly a intimidating obstacle, my time dedication to organizations and personal ambitions are masking my ability to pursue my courses in a better angle. This week I sacrificed the dedication to going to many of the organization meetings and even suspended my personal projects to ensure that all of the class assignments were completed on time.
+
+Next week, I plan on taking advantage of the weekend to reduce the amount of weekday school work, so I can reconsider going to my organization meetings again. Hopefully, I can also readjust my schedule to fit in some personal project work too. As for what I'll be doing this week for CS371P, I'll be starting the project early, finding a partner to work with, and continue to get as much of the readings accomplished as possible. 
+
+My reactions to CS371P material this week:
+
+The material this week impressed me in many degrees. While I was a little knowledgable about exceptions and the different methods of incrementing, I was a little shocked to find out the usefulness of using the try catch phrases versus the asserts/unit tests. The try catch phrases are obviously one of the most useful built in functions in C++, and I can see how they refrain the programmers having so many headaches at work. The differences in the incremention and left side/right side arithmetic was interesting too, but only in that it was interesting to see how the built in arithmetic operations work.
+
+
+Tip of the Week:
+
+I recently ran into a random blog that I never thought I would read. The blog is managed and owned by a distinguished researcher who is now a author, named Michael Nielsen. He is a author of a profoundly important book on super conductors and their role in super computers, but his research into neural networks is something of which I've taken much interest in. He is currently in the works of writing on his research on Neural Networks/Deep Learning, and his material is absolutely astounding effective. You can see his blog on it here: neuralnetworksanddeeplearning.com/chap1.html
+
+I suggest that you read through his material, because it goes into great depth on the topics of deep learning and really, he explains it very well. Michael Nielsen even maintains a Github repository that contains a working Python 3 program demonstrating exactly what he writes on in his new book
+
+This is all I have for to say this week, but if you have any questions or comments, feel free to comment or message me.
+
+

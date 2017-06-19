@@ -1,0 +1,38 @@
+---
+layout: post_cs371p
+title: Week 4 - February 14th Week Blog
+permalink: /cs371p/week-4
+categories: cs371p
+---
+
+On the topic of CS371P.
+
+Core Questions:
+
+1. What did you do this past week?
+
+This past week was a nightmare. Not so much that there was a lot to do, which there was, but I was dedicated to a morning and evening christian session that would take up six or so hours of my time each day. The project was due this thursday, being the primary focus of my homework towards this class, and my partner and I spent about a dozen hours this week alone working on perfecting the algorithms of our project solution. Unfortunately, each of our meetings were late at night, making it difficult for me to find time to sleep. So essentially, this week I worked on trying to fit time into understanding and implementing the solution for the project while also doing some of the miscellaneous readdings that Professor Downing put on the schedule.
+
+2. What is in your way?
+
+What is in my way is my dedications. I have the passion and intiative to engage and take part in all of the homework and activities that need ot be done to be successfull in this course, but finding the time apart from my dedications places me in dispair. I just can't figure out when to stop my dedications to my other organizations and begin working on finalizing my work with this course. Perhaps I'll have to start really separating the work by days instead of by hours.
+
+3. What will you do next week?
+
+This next week will definitely cruise along just fine. With only one test, no assignments or projects due, getting the material/readings/homeworks completed shouldn't be a issue. I'll be reviewing for the upcoming test, uh oh, continue to read the material assigned as well as review some of the previous assignments and notes. Hopefully with this combination, the week after will be another breezy week, where no efforts will have to really take part. I enjoy the material Downing teaches and the content the readings contain have so much useful information that I will need to know for the upcoming internships. Lets hope for the best that I can manage to stay on track.
+
+
+My experiences with CS371P this week:
+
+I was stressed but also relieved at the success of managing to finish the project and understand the lessons taught. Downing is a great lecturer and the TAs do a wonderful job in clarifying the objectives/details of the homeworks and assignments. This week made me realize that there really are many different abstractions in c++ that I don't know, and how templates are such a useful tool in writing functions/methods. Templates will be my hero and savior for sure. 
+
+My reactions to CS371P material this week:
+
+I was shocked to see how templates worked, where I realized that lists and other abstract structures are treated the way they are. I always had a hard time understanding why those datastructures had <type>, but these lectures not only helped me understand why they exists, but the powers of the different iterators available. The all mighty abstractions are starting to over rule my thoughts and feelings.
+
+Tip of the Week:
+
+Git merges are a nasty pain. When you can merge the dev with the master, it may look smooth. The problem occurs, however, when the add and commits show a file that has conflicting versions across dev and master branches. If you are absolutely desperate to update master with the dev material, don't be afraid to use the git mergetool. The reason I mention this is because when you only have 5 minutes to turn in a project and obtain the git sha, having time to resolve the issues between the details of the project may cause you to turn it in late. The git mergetool is a life saver in that it can quickly show you which parts of the code are in conflict and gives you options to quickly resolve all the issues without even spending a minute. This tool is magical and deserves every browne point and man or woman could ever offer. This is just another reason to praise the quality of github.
+
+
+

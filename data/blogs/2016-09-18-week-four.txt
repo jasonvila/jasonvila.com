@@ -1,0 +1,47 @@
+---
+layout: post_cs373
+title: Week 4 - September 12th Week Blog
+permalink: /cs373/week-4
+categories: cs373
+---
+
+On the topic of CS373.
+
+Core Questions:
+
+~~ What did you do this past week? ~~
+
+Tired and sick, I probably spent the majority of this week in bed, but I did my best to be productive in this class. This past week was busy with attending class, finishing the reading assignments, and starting the Netflix project. While the overall project seems a bit overwhelming, the algorithms and requirements that we need to accomplish aren't very intimidating. After several meetups with my partner, we have an intuitive and confident outline as well as much of the code already written. I hope this upcoming week proves to show that the effort we put in the project was more than enough.
+
+
+
+~~ What is in your way? ~~
+
+Instead of organizations cluttering my calendar, my path was mostly deterred from allergies and sore throats. I could hardly stay awake for many of the lectures I sat through (Downing's and the others). Being out of town this weekend also contributes to the notion that this last week was certainly less productive than I hoped for. Other than that, I decided to keep a tally of how many hours I did spend with my organizations. It turns out that I spent about 12 hours with the Wesley and Navigators from Monday through Thursday. If I spent that time working on my projects, I might be able to get them done quicker, however, I'd probably have a spiritual or emotional breakdown. I guess for the sake of spiritual and emotional sanity, I will continue to spend as much time as possible at these organizations.
+
+
+
+~~ What will you do next week? ~~
+
+I hope that I will get better next week, but this next week will definitely be a race to finishing the Netflix project. I've made physical sacrifices to make deadlines before, and I suppose I'd be willing again. The only reason I'd be willing to, though, is because I wouldn't want to hold my partner back. If all else fails and I'm fairly sick, I'll definitely make sure to speak to Downing and my partner about my situation, but I'm sure everything will work out. 
+
+
+
+~~ My experiences with CS373 this week: ~~
+
+It probably would've been better if I was feeling better, but the lectures were certainly interesting. This week we learned about the netflix project, a competition that took place 6 or so years ago, and that took 3 years to find a winner. Some of the algorithms for solving netflix seem self explanatory, but understanding the use of a cache, the objective, and the RMSE generation will definitely help my partner and I complete this project. We also had someone from Bloomberg speak, which was helpful in knowing the applications of our academics towards our careers.
+
+
+
+~~ My reactions to CS373 material this week: ~~
+
+The course material was certainly fun and exciting this week. I would've been more into learning the material this week, but the sickness really took a toll out of my attitude towards taking the material more seriously. I definitely felt that all of the material from this week will and should have a significant impact on the way I design my projects, look for jobs, and engage my work.
+
+
+
+~~ Tip of the Week: ~~
+
+For those of you who want to learn android development, Android Studio is the key to easily implementing android apps. While the official Android Studio release (after Beta) took place only a few years ago, its important to note the tools and libraries that Android Studio provides. More so than any other tool provided, Android Studio provides the UI friendliness that a programmer would need to visual the affects of his/her code. 
+
+
+

@@ -1,0 +1,53 @@
+---
+layout: post_cs373
+title: Week 1 - August 24th Week Blog
+permalink: /cs373/week-1
+categories: cs373
+---
+
+On the topic of CS373.
+
+Core Questions:
+
+~~ What did you do this past week? ~~
+
+Tis the season of short shorts and hot weather, a warm and sweaty start to a new semester at UT Austin. 
+
+Much like every other student (or most of them I hope), I spent the majority of this week roaming class to class, receiving my "destiny" (syllabi), and sitting through many awe inspiring lectures. In particular, Mr. Downing never disappoints to prematurely provide the class highlights. 
+
+This week we learned some preliminary python basics as well as the purpose of assertions and unit tests. Although I've already witnessed Mr. Downing's explanation of assertions and unit tests (in his CS 371P course), I still enjoyed listening to Mr. Downing's lecture. 
+
+
+
+~~ What is in your way? ~~
+
+Other than my relationships with my friends, family, girlfriend, and God, there isn't anything standing between me and Mr. Downing's assignments. Of course, Netflix is seductive in its own sense, but the PCL has been calling my name tad bit louder.
+
+Realistically, upcoming interviews (though I'm not entirely sure how dedicated I am to preparing for them - because of current offers) and organization kick offs have been keeping me fairly busy, so I hope that they will tone down in the future.
+
+
+
+~~ What will you do next week? ~~
+
+My objectives this next week include finishing Collatz (shouldn't take any longer than an hour) with some optimizations, attend the lectures, and accomplish the scheduled readings. The readings will probably be the tougher part of the batch, but I should have plenty of time to spare.
+
+
+
+~~ My experiences with CS373 this week: ~~
+
+Its been fun and exciting. Its nice to see Mr. Downing, though it was pretty saddening to hear we're doing tests through Canvas again (they have terrible formatting for coding questions). I guess my experience was relaxed and underwhelmed for the most part.
+
+
+
+~~ My reactions to CS373 material this week: ~~
+
+I felt a bit mixed with the overall class. Even though it seems like CS 371P from last year, I want to make sure I do well on the tests this time... The tests on Canvas can be extremely challenging. The material this week was refreshing, however, I'm sure the course content will get more exciting as the semester continues.
+
+
+
+~~ Tip of the Week: ~~
+
+It turns out that you can run the jekyll github-pages server from your Windows machine. You just have to install Ruby, Chocolatey, jekyll, and bundler. Follow the instructions from this page ("Installation" and "Install github-pages") :
+https://jekyllrb.com/docs/windows/
+
+To run it locally, make sure the github repo is cloned locally to your machine (with the gemfile). In order to run it locally, follow "Install github-pages" from the above link and you'll want to execute "bundle exec jekyll s" in cmd.exe at your sites root directory. Once the command shows jekyll listening on port 4000, type "localhost:4000" in your browser to view your locally run jekyll server instance.
