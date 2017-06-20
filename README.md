@@ -44,8 +44,50 @@ data: localhost:5000/api/data
 misc: localhost:5000/api/misc
 
 
-to fix npm and nodejs versions - just made new droplet and install them
+to fix npm and nodejs versions - just made new droplet and reinstall everything
 
 
 fix issue with npm install -- 
 use 'ln -s /usr/bin/nodejs /usr/bin/node'
+issue was that it was running node instead of nodejs
+
+backend
+--------
+sudo apt-get install python3-pip
+pip3 install flask
+pip3 install flask_sqlalchemy
+sudo apt-get install postgresql
+su postgres
+psql
+create database jvdb;
+\q
+su root
+pip3 install flask_restless
+
+
+To let it continue running:
+nohup npm start &
+nohup python3 application.py &
+
+to kill python3 process:
+ps -fA | grep python
+second number is process number.
+kill numb
+you'll want to kill the one that isn't process numb=1
+
+Files on server are in /home/jasonvila.com
+This is because you can't access root folder with any other user
+postgres user can't access root folder, thus can't run backend in root folder, have to run in home folder.
+
+To change ports or what can be served, change bs-config.json file.
+
+To run frontend:
+npm install
+nohup npm start &
+
+To run backend:
+nohup python3 application.py &
+python3 database_parser.py --> this is for inserting data in database.
+
+postgresql is already running in background. - user is postgres.
+
