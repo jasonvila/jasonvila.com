@@ -42,3 +42,10 @@ blogs: localhost:5000/api/blog
 apps: localhost:5000/api/app
 data: localhost:5000/api/data
 misc: localhost:5000/api/misc
+
+
+to fix npm and nodejs versions - just made new droplet and install them
+
+
+fix issue with npm install -- 
+use 'ln -s /usr/bin/nodejs /usr/bin/node'
