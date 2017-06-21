@@ -1,12 +1,29 @@
 import re
 import sys
+import json
 from flask import Blueprint, send_from_directory, request
+import query
 
 frontend = Blueprint('frontend', __name__)
 
-@frontend.route('/')
-def getIndexHTML(path=""):
-	return send_from_directory('./', 'index.html')
+# APIS
+@frontend.route('/api/blog')
+def getBlogs(path=""):
+	# print(Blog.query.all())
+	# return json.dumps(Blog.query.all())
+	return query.getBlogs()
+
+@frontend.route('/api/blog/<path:path>')
+def getBlog(path=""):
+	return query.getBlog(path)
+
+
+
+
+# @frontend.route('/')
+# def getIndexHTML(path=""):
+# 	return send_from_directory('./', 'index.html')
+
 
 
 # All files for specific extensions.
@@ -18,21 +35,21 @@ def getIndexHTML(path=""):
 
 # All files
 
-@frontend.route('/<path:path>')
-def getResources(path=""):
-	print("path: " + path, file=sys.stderr)
-	if "about" == path:
-		return send_from_directory('./','index.html')
-	elif "blog" == path:
-		return send_from_directory('./','index.html')
-	elif "apps" == path:
-		return send_from_directory('./','index.html')
-	elif "data" == path:
-		return send_from_directory('./','index.html')
-	elif "misc" == path:
-		return send_from_directory('./','index.html')
-	else:
-		return send_from_directory('./', path)
+# @frontend.route('/<path:path>')
+# def getResources(path=""):
+# 	print("path: " + path, file=sys.stderr)
+# 	if "about" == path:
+# 		return send_from_directory('./','index.html')
+# 	elif "blog" == path:
+# 		return send_from_directory('./','index.html')
+# 	elif "apps" == path:
+# 		return send_from_directory('./','index.html')
+# 	elif "data" == path:
+# 		return send_from_directory('./','index.html')
+# 	elif "misc" == path:
+# 		return send_from_directory('./','index.html')
+# 	else:
+# 		return send_from_directory('./', path)
 
 # @frontend.route('/about')
 # def getAboutHTML(path=""):
