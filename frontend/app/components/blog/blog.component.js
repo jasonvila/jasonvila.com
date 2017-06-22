@@ -15,6 +15,17 @@ let BlogComponent = class BlogComponent {
     constructor(allServicesService) {
         this.allServicesService = allServicesService;
         this.output = "";
+        this.title = "Blogs";
+        this.loading = true;
+    }
+    ngOnInit() {
+        this.getAllBlogs();
+    }
+    getAllBlogs() {
+        this.allServicesService.getAllBlogs().subscribe(allBlogs => {
+            this.data = allBlogs;
+            this.loading = false;
+        }, error => this.errorMessage = error);
     }
 };
 BlogComponent = __decorate([

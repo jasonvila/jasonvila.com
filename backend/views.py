@@ -2,12 +2,14 @@ import re
 import sys
 import json
 from flask import Blueprint, send_from_directory, request
+from flask_cors import CORS, cross_origin
 import query
 
 frontend = Blueprint('frontend', __name__)
 
 # APIS
 @frontend.route('/api/blog')
+@cross_origin('localhost', headers=['Content-Type', 'Authorization'])
 def getBlogs(path=""):
 	# print(Blog.query.all())
 	# return json.dumps(Blog.query.all())

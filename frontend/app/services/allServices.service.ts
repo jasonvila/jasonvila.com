@@ -7,6 +7,7 @@ import 'rxjs/add/operator/catch';
 @Injectable()
 export class AllServicesService {
 	// // All the API URLs
+	private blogUrl = 'http://localhost:5000/api/blog';
 	// private statesUrl = 'api/states';
 	// private partiesUrl = 'api/parties';
 	// private candidatesUrl = 'api/candidates';
@@ -21,6 +22,12 @@ export class AllServicesService {
 	// private searchResultsOrURL = 'api/s_or?term=';
 
 	constructor(private http: Http) {}
+
+	getAllBlogs(): Observable<any>{
+		return this.http.get(this.blogUrl)
+								 .map(this.extractData)
+								 .catch(this.handleError);
+	}
 
 	// getAllStates(): Observable<any> {
 	// 	return this.http.get(this.statesUrl)
@@ -109,25 +116,25 @@ export class AllServicesService {
 
 
 
-	// private extractData(res: Response) {
-	// 	let body = res.json();
-	// 	return body.objects || body || {};
-	// }
+	private extractData(res: Response) {
+	 	let body = res.json();
+	 	return body.objects || body || {};
+	}
 
 	// private extractTestData(res: Response) {
 	// 	return res.text();
 	// }
 
-	// private handleError (error: Response | any) {
-	// 	let errMsg: string;
-	//     if (error instanceof Response) {
-	//       const body = error.json() || '';
-	//       const err = body.error || JSON.stringify(body);
-	//       errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
-	//     } else {
-	//       errMsg = error.message ? error.message : error.toString();
-	//     }
-	//     console.error(errMsg);
-	//     return Observable.throw(errMsg);
-	// }
+	private handleError (error: Response | any) {
+	 	let errMsg: string;
+	     if (error instanceof Response) {
+	       const body = error.json() || '';
+	       const err = body.error || JSON.stringify(body);
+	       errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
+	     } else {
+	       errMsg = error.message ? error.message : error.toString();
+	     }
+	     console.error(errMsg);
+	     return Observable.throw(errMsg);
+	 }
 }
