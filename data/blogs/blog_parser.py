@@ -46,7 +46,7 @@ for filename in onlyfiles:
 
 		for x in range(len(content)): 
 			if x > 6:
-				c = c + content[x-1] + "\n"
+				c = c + content[x-1] + "<br/>"
 
 		# print ("content : " + c)
 

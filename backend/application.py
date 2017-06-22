@@ -8,7 +8,7 @@ def create_app():
 	
 	application.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///jvdb'
 	application.config["CORS_HEADERS"] = 'Content-Type'
-	cors = CORS(application, resources={r"/api/blog": {"origins": "*"}})
+	cors = CORS(application, resources={r"/api/*": {"origins": "*"}})
 
 	application.debug = True
 	application.testing = True

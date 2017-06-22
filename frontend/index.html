@@ -14,13 +14,13 @@
 
     <!-- 1. Load libraries -->
      <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="/node_modules/core-js/client/shim.min.js"></script>
+    <script src="/node_modules/zone.js/dist/zone.js"></script>
+    <script src="/node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="/node_modules/systemjs/dist/system.src.js"></script>
 
     <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
+    <script src="/systemjs.config.js"></script>
 
     
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
@@ -49,8 +49,8 @@
     
 
      <script>
-    System.import('systemjs.config.js').then(function () {
-        System.import('main');
+    System.import('/systemjs.config.js').then(function () {
+        System.import('/app/main.js');
       }).catch(console.error.bind(console));
   </script>
 
