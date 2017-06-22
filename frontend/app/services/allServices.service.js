@@ -30,7 +30,7 @@ let AllServicesService = class AllServicesService {
     constructor(http) {
         this.http = http;
         // // All the API URLs
-        this.blogUrl = 'http://localhost:5000/api/blog';
+        this.blogUrl = 'http://jasonvila.com:5000/api/blog';
     }
     getAllBlogs() {
         return this.http.get(this.blogUrl)

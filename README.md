@@ -93,7 +93,6 @@ python3 database_parser.py --> this is for inserting data in database.
 
 postgresql is already running in background. - user is postgres.
 
-
 primeng is renderer for tables, want to edit this to make your own custom
 
 need to update blog.json - wrong data for 2016116 - needs to be 20161106
@@ -107,3 +106,5 @@ Need to update database.
 Check why \n not showing.
 
 using sortedcontainers.SortedDict for sorting the results.
+
+to make flask public, just change application.run() to application.run(host='0.0.0.0') -- this fixes the cors issue. - also flask_cors - the cross origin can be fixed so that any website can request it.

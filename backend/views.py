@@ -9,7 +9,7 @@ frontend = Blueprint('frontend', __name__)
 
 # APIS
 @frontend.route('/api/blog')
-@cross_origin('localhost', headers=['Content-Type', 'Authorization'])
+@cross_origin('*', headers=['Content-Type','Authorization'])
 def getBlogs(path=""):
 	# print(Blog.query.all())
 	# return json.dumps(Blog.query.all())

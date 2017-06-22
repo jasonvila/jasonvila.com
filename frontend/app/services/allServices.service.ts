@@ -7,7 +7,7 @@ import 'rxjs/add/operator/catch';
 @Injectable()
 export class AllServicesService {
 	// // All the API URLs
-	private blogUrl = 'http://localhost:5000/api/blog';
+	private blogUrl = 'http://jasonvila.com:5000/api/blog';
 	// private statesUrl = 'api/states';
 	// private partiesUrl = 'api/parties';
 	// private candidatesUrl = 'api/candidates';
