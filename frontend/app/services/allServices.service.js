@@ -37,6 +37,12 @@ let AllServicesService = class AllServicesService {
             .map(this.extractData)
             .catch(this.handleError);
     }
+    getBlog(id) {
+        var singleBlogUrl = this.blogUrl + "/" + id;
+        return this.http.get(singleBlogUrl)
+            .map(this.extractData)
+            .catch(this.handleError);
+    }
     // getAllStates(): Observable<any> {
     // 	return this.http.get(this.statesUrl)
     // 			   .map(this.extractData)

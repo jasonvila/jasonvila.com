@@ -10,50 +10,44 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
+const router_1 = require("@angular/router");
 const allServices_service_1 = require("../../services/allServices.service");
-let BlogComponent = class BlogComponent {
-    constructor(allServicesService) {
+let BlogDetailsComponent = class BlogDetailsComponent {
+    constructor(route, allServicesService) {
+        this.route = route;
         this.allServicesService = allServicesService;
         this.output = "";
         this.title = "Blogs";
         this.loading = true;
     }
     ngOnInit() {
-        this.getAllBlogs();
+        this.sub = this.route.params.subscribe(params => {
+            this.id = +params['id'];
+            this.getBlog();
+        });
     }
-    getAllBlogs() {
-        this.allServicesService.getAllBlogs().subscribe(allBlogs => {
-            this.data = allBlogs;
-            this.t = this.data[0].title;
-            var div = document.getElementById('blog-list');
-            var len = 0;
-            var con = "";
+    getBlog() {
+        this.allServicesService.getBlog(this.id).subscribe(blog => {
+            this.data = blog;
+            var div = document.getElementById('container');
             for (let e of this.data) {
-                console.log(e.content);
-                if (e.content.length > 500) {
-                    con = e.content.substring(0, 500) + "...";
-                }
-                else {
-                    con = e.content;
-                }
-                div.innerHTML = div.innerHTML + "<li class='blog-entry'><a href='/blog/" + e.id + "' class='blog-entry-link'><div class='blog-entry-container'><h3 class='blog-entry-title blog-entry-element'>" + e.title + "</h3><h4 class='blog-entry-category blog-entry-element'>" + e.category + "</h4><p class='blog-entry-content blog-entry-element'>" + con + "</p></div></a><hr/></li>";
+                div.innerHTML = "<p>" + e.content + "</p>";
             }
-            console.log(this.t);
             this.loading = false;
         }, error => this.errorMessage = error);
     }
 };
-BlogComponent = __decorate([
+BlogDetailsComponent = __decorate([
     core_1.Component({
-        selector: 'blog',
-        templateUrl: 'app/components/blog/blog.html',
-        styleUrls: ['app/components/blog/blog.css'],
+        selector: 'blog-details',
+        templateUrl: 'app/components/blog_details/blog_details.html',
+        styleUrls: ['app/components/blog_details/blog_details.css'],
         encapsulation: core_1.ViewEncapsulation.None,
         providers: [
             allServices_service_1.AllServicesService
         ]
     }),
-    __metadata("design:paramtypes", [allServices_service_1.AllServicesService])
-], BlogComponent);
-exports.BlogComponent = BlogComponent;
-//# sourceMappingURL=blog.component.js.map
+    __metadata("design:paramtypes", [router_1.ActivatedRoute, allServices_service_1.AllServicesService])
+], BlogDetailsComponent);
+exports.BlogDetailsComponent = BlogDetailsComponent;
+//# sourceMappingURL=blog_details.component.js.map

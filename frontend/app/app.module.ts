@@ -12,6 +12,7 @@ import { AppsComponent } from './components/apps/apps.component';
 import { MiscComponent } from './components/misc/misc.component';
 import { DataComponent } from './components/data/data.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { BlogDetailsComponent} from './components/blog_details/blog_details.component';
 import { PageNotFoundComponent } from './components/page_not_found/not_found.component';
 
 @NgModule({
@@ -41,6 +42,10 @@ import { PageNotFoundComponent } from './components/page_not_found/not_found.com
         component: BlogComponent
       },
       { 
+        path: 'blog/:id',
+        component: BlogDetailsComponent
+      },
+      { 
         path: 'data',
         component: DataComponent
       },
@@ -67,6 +72,7 @@ import { PageNotFoundComponent } from './components/page_not_found/not_found.com
     MiscComponent,
     DataComponent,
     BlogComponent,
+    BlogDetailsComponent,
     PageNotFoundComponent
   ],
   bootstrap: [ AppComponent ]
