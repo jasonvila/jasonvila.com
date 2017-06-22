@@ -1,5 +1,6 @@
 import json
 from models import Blog, App, Data, Misc
+from sortedcontainers import SortedDict
 
 def getBlogs():
 	blog_list = list()
@@ -14,7 +15,7 @@ def getBlogs():
 		blog_list.append(temp)
 	ret = dict()
 	ret["num_results"] = len(blog_list)
-	ret["objects"] = blog_list
+	ret["objects"] = sortBlogs(blog_list)
 	ret["page"] = 1
 	ret["total_pages"] = 1
 	return json.dumps(ret)
@@ -36,3 +37,12 @@ def getBlog(id):
 	ret["page"] = 1
 	ret["total_pages"] = 1
 	return json.dumps(ret)
+
+def sortBlogs(l):
+	nl = list()
+	temp = SortedDict()
+	for e in l:
+		temp[e['date']] = e
+	for key in temp:
+		nl.append(temp[key])
+	return nl

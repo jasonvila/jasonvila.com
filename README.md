@@ -56,6 +56,7 @@ backend
 sudo apt-get install python3-pip
 pip3 install flask
 pip3 install flask_sqlalchemy
+pip3 install sortedcontainers
 sudo apt-get install postgresql
 su postgres
 psql
@@ -91,3 +92,17 @@ python3 database_parser.py --> this is for inserting data in database.
 
 postgresql is already running in background. - user is postgres.
 
+
+primeng is renderer for tables, want to edit this to make your own custom
+
+need to update blog.json - wrong data for 2016116 - needs to be 20161106
+
+fixed whole issue with css by add ViewEncapsulation.None in @Component
+
+changed dynamic load with just using document.getElementById and changing the innerHTML.
+
+Need to update database.
+
+Check why \n not showing.
+
+using sortedcontainers.SortedDict for sorting the results.

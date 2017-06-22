@@ -5,33 +5,9 @@
 	  <li><a href="#">Next</a></li>
 	</ul>
 
-	<p-dataTable [value]="data"
-				 [rows]="3"
-				 [paginator]="true"
-				 [pageLinks]="3"
-				 [rowsPerPageOptions]="[3,10,20]"
-				 [globalFilter]="gb">
+	<ul class="blog-list" id="blog-list">
 
-	<ul class="blog-list">
-		<p-column field="title"
-				  header="Blog Name"
-				  filterMatchMode="contains">
-		<template let-fakeBlog="rowData" pTemplate type="body">
-			<li class="blog-entry">
-				<a href="/blog" class="blog-entry-link">
-					<div class="blog-entry-container">
-						<h3 class="blog-entry-title blog-entry-element">{{fakeBlog.title}}</h3>
-						<h4 class="blog-entry-category blog-entry-element">{{fakeBlog.category}}</h4>
-						<div class="blog-entry-content blog-entry-element">content</div>
-	<!-- 					<p class="blog-entry-read">Read</p>-->				
-					</div>
-				</a>
-				<hr/>
-			</li>
-		</template>
-	</p-column>
-
-		<li class="blog-entry">
+		<!-- <li class="blog-entry">
 			<a href="/blog" class="blog-entry-link">
 				<div class="blog-entry-container">
 					<h3 class="blog-entry-title blog-entry-element">Blog 1</h3>
@@ -53,9 +29,8 @@
 			</a>
 
 			<hr/>
-		</li>
+		</li> -->
 	</ul>
-</p-dataTable>
 
 	<ul class="pager">
 	  <li><a href="#">Previous</a></li>
