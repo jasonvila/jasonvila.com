@@ -40,9 +40,14 @@ def getBlog(id):
 
 def sortBlogs(l):
 	nl = list()
+	nnl = list()
 	temp = SortedDict()
 	for e in l:
 		temp[e['date']] = e
 	for key in temp:
-		nl.append(temp[key])
+		# nl.append(temp[key])
+		nl = [temp[key]] + nl
+	# for i in range(len(nl)-1, 0):
+	# 	print(str(i))
+		# nnl.append(nl[i])
 	return nl
