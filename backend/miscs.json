@@ -1,6 +1,7 @@
 {
 	"misc 1" : {
 		"title" : "misc1",
+		"category" : "Category 1",
 		"link" : "#",
 		"date" : "20170617",
 		"content" : "fasdfasdfsadfasdfasdfas",
@@ -8,6 +9,7 @@
 	},
 	"misc 2" : {
 		"title" : "misc2",
+		"category" : "Category 2",
 		"link" : "#",
 		"date" : "20170618",
 		"content" : "fasdfasdfsadfasdfasdfas",
@@ -15,6 +17,7 @@
 	},
 	"misc 3" : {
 		"title" : "misc3",
+		"category" : "Category 3",
 		"link" : "#",
 		"date" : "20170619",
 		"content" : "fasdfasdfsadfasdfasdfas",
@@ -22,6 +25,7 @@
 	},
 	"misc 4" : {
 		"title" : "misc4",
+		"category" : "Category 4",
 		"link" : "#",
 		"date" : "20170620",
 		"content" : "fasdfasdfsadfasdfasdfas",
@@ -29,6 +33,7 @@
 	},
 	"misc 5" : {
 		"title" : "misc5",
+		"category" : "Category 5",
 		"link" : "#",
 		"date" : "20170621",
 		"content" : "fasdfasdfsadfasdfasdfas",

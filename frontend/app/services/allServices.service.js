@@ -18,6 +18,7 @@ let AllServicesService = class AllServicesService {
     // private blogUrl = 'http://jasonvila.com:5000/api/blog';
     // private appUrl = 'http://jasonvila.com:5000/api/app';
     // private dataUrl = 'http://jasonvila.com:5000/api/data';
+    // private miscUrl = 'http://jasonvila.com:5000/api/misc';
     // private testOutputUrl = 'api/test';
     // private searchResultsAndURL = 'api/s_and?term=';
     // private searchResultsOrURL = 'api/s_or?term=';
@@ -27,6 +28,7 @@ let AllServicesService = class AllServicesService {
         this.blogUrl = 'http://localhost:5000/api/blog';
         this.appUrl = 'http://localhost:5000/api/app';
         this.dataUrl = 'http://localhost:5000/api/data';
+        this.miscUrl = 'http://localhost:5000/api/misc';
     }
     getAllBlogs() {
         return this.http.get(this.blogUrl)
@@ -58,6 +60,11 @@ let AllServicesService = class AllServicesService {
     getData(id) {
         var singleDataUrl = this.dataUrl + "/" + id;
         return this.http.get(singleDataUrl)
+            .map(this.extractData)
+            .catch(this.handleError);
+    }
+    getAllMisc() {
+        return this.http.get(this.miscUrl)
             .map(this.extractData)
             .catch(this.handleError);
     }

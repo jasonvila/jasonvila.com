@@ -51,12 +51,13 @@ class Misc(database.Model):
     __tablename__ = "misc"
     id = database.Column(database.Integer, primary_key=True)
     title = database.Column(database.String, unique=True)
+    category = database.Column(database.String)
     link = database.Column(database.String)
     date = database.Column(database.String)
     content = database.Column(database.String)
     image = database.Column(database.String)
 
     def __repr__(self):
-        return '{"Misc" : {"title": %r, "link": %r, "date": %r, "content": %r, "image": %r}}' %\
-               (self.title, self.link, self.date, self.content, self.image)
+        return '{"Misc" : {"title": %r, "category": %r, "link": %r, "date": %r, "content": %r, "image": %r}}' %\
+               (self.title, self.category, self.link, self.date, self.content, self.image)
 

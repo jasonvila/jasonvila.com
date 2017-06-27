@@ -52,7 +52,7 @@ def fill_miscs_table():
     for key in MISCS_JSON.keys():
         counter+= 1
         print (str(key))
-        temp_misc = Misc(title=MISCS_JSON[key]['title'],link=MISCS_JSON[key]['link'],date=MISCS_JSON[key]['date'],content=MISCS_JSON[key]['content'],image=MISCS_JSON[key]['image'])
+        temp_misc = Misc(title=MISCS_JSON[key]['title'],category=MISCS_JSON[key]['category'],link=MISCS_JSON[key]['link'],date=MISCS_JSON[key]['date'],content=MISCS_JSON[key]['content'],image=MISCS_JSON[key]['image'])
         database.session.add(temp_misc)
     database.session.commit()
 
