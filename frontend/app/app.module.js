@@ -35,7 +35,7 @@ AppModule = __decorate([
             router_1.RouterModule.forRoot([
                 {
                     path: '',
-                    component: home_component_1.HomeComponent
+                    component: about_component_1.AboutComponent
                 },
                 {
                     path: 'home',

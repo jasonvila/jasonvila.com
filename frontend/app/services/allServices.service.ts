@@ -11,10 +11,12 @@ export class AllServicesService {
 	private appUrl = 'http://localhost:5000/api/app';
 	private dataUrl = 'http://localhost:5000/api/data';
 	private miscUrl = 'http://localhost:5000/api/misc';
+	private homeUrl = 'http://localhost:5000/api/recent';
 	// private blogUrl = 'http://jasonvila.com:5000/api/blog';
 	// private appUrl = 'http://jasonvila.com:5000/api/app';
 	// private dataUrl = 'http://jasonvila.com:5000/api/data';
 	// private miscUrl = 'http://jasonvila.com:5000/api/misc';
+	// private homeUrl = 'http://jasonvila.com:5000/api/recent';
 	// private testOutputUrl = 'api/test';
 	// private searchResultsAndURL = 'api/s_and?term=';
 	// private searchResultsOrURL = 'api/s_or?term=';
@@ -71,6 +73,12 @@ export class AllServicesService {
 	 	return this.http.get(singleMiscUrl)
 	 			   .map(this.extractData)
 	 			   .catch(this.handleError);
+	}
+
+	getAllHome(): Observable<any>{
+		return this.http.get(this.homeUrl)
+								 .map(this.extractData)
+								 .catch(this.handleError);
 	}
 
 	// getTestOutput(): Observable<any> {

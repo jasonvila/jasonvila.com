@@ -26,7 +26,7 @@ import { PageNotFoundComponent } from './components/page_not_found/not_found.com
   	RouterModule.forRoot([
       {
         path: '',
-        component: HomeComponent
+        component: AboutComponent
       },
       {
         path: 'home',
