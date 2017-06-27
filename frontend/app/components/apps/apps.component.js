@@ -15,6 +15,32 @@ let AppsComponent = class AppsComponent {
     constructor(allServicesService) {
         this.allServicesService = allServicesService;
         this.output = "";
+        this.title = "Apps";
+        this.loading = true;
+    }
+    ngOnInit() {
+        this.getAllApps();
+    }
+    getAllApps() {
+        this.allServicesService.getAllApps().subscribe(allApps => {
+            this.data = allApps;
+            this.t = this.data[0].title;
+            var div = document.getElementById('app-list');
+            var len = 0;
+            var con = "";
+            for (let e of this.data) {
+                console.log(e.content);
+                if (e.content.length > 500) {
+                    con = e.content.substring(0, 500) + "...";
+                }
+                else {
+                    con = e.content;
+                }
+                div.innerHTML = div.innerHTML + "<li class='app-entry'><a href='/app/" + e.id + "' class='app-entry-link'><div class='app-entry-container'><h3 class='app-entry-title app-entry-element'>" + e.title + "</h3><h4 class='app-entry-category app-entry-element'>" + e.category + "</h4><p class='app-entry-content app-entry-element'>" + con + "</p></div></a><hr/></li>";
+            }
+            console.log(this.t);
+            this.loading = false;
+        }, error => this.errorMessage = error);
     }
 };
 AppsComponent = __decorate([
@@ -22,6 +48,7 @@ AppsComponent = __decorate([
         selector: 'apps',
         templateUrl: 'app/components/apps/apps.html',
         styleUrls: ['app/components/apps/apps.css'],
+        encapsulation: core_1.ViewEncapsulation.None,
         providers: [
             allServices_service_1.AllServicesService
         ]

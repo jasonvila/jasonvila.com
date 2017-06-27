@@ -7,17 +7,11 @@ import 'rxjs/add/operator/catch';
 @Injectable()
 export class AllServicesService {
 	// // All the API URLs
-	private blogUrl = 'http://jasonvila.com:5000/api/blog';
-	// private statesUrl = 'api/states';
-	// private partiesUrl = 'api/parties';
-	// private candidatesUrl = 'api/candidates';
-	// private electionsUrl = 'api/elections';
-	// private stateDetailsUrl = 'api/state';
-	// private partyDetailsUrl = 'api/party';
-	// private candidateDetailsUrl = 'api/candidate';
-	// private electionDetailsUrl = 'api/election';
+	private blogUrl = 'http://localhost:5000/api/blog';
+	private appUrl = 'http://localhost:5000/api/app';
+	// private blogUrl = 'http://jasonvila.com:5000/api/blog';
+	// private appUrl = 'http://jasonvila.com:5000/api/app';
 	// private testOutputUrl = 'api/test';
-	// private imageUrl = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyDnOT53CCV948mcKY6rawsUNAAZqOoRKFU&cx=002168208795225832214:dup1kwhfope&searchType=image&imgSize=medium&q=';
 	// private searchResultsAndURL = 'api/s_and?term=';
 	// private searchResultsOrURL = 'api/s_or?term=';
 
@@ -36,68 +30,22 @@ export class AllServicesService {
 	 			   .catch(this.handleError);
 	}
 
-	// getAllStates(): Observable<any> {
-	// 	return this.http.get(this.statesUrl)
-	// 			   .map(this.extractData)
-	// 			   .catch(this.handleError);
-	// }
+	getAllApps(): Observable<any>{
+		return this.http.get(this.appUrl)
+								 .map(this.extractData)
+								 .catch(this.handleError);
+	}
 
-	// getAllParties(): Observable<any> {
-	// 	return this.http.get(this.partiesUrl)
-	// 			   .map(this.extractData)
-	// 			   .catch(this.handleError);
-	// }
-
-	// getAllCandidates(): Observable<any> {
-	// 	return this.http.get(this.candidatesUrl)
-	// 			   .map(this.extractData)
-	// 			   .catch(this.handleError);
-	// }
-
-	// getAllElections(): Observable<any> {
-	// 	return this.http.get(this.electionsUrl)
-	// 			   .map(this.extractData)
-	// 			   .catch(this.handleError);
-	// }
-
-	// getStateDetails(id: number): Observable<any> {
-	// 	var singleStateUrl = this.stateDetailsUrl + "/" + id;
-	// 	return this.http.get(singleStateUrl)
-	// 			   .map(this.extractData)
-	// 			   .catch(this.handleError);
-	// }
-
-	// getPartyDetails(id: number): Observable<any> {
-	// 	var singlePartyUrl = this.partyDetailsUrl + "/" + id;
-	// 	return this.http.get(singlePartyUrl)
-	// 			   .map(this.extractData)
-	// 			   .catch(this.handleError);
-	// }
-
-	// getCandidateDetails(id: number): Observable<any> {
-	// 	var singleCandidateUrl = this.candidateDetailsUrl + "/" + id;
-	// 	return this.http.get(singleCandidateUrl)
-	// 			   .map(this.extractData)
-	// 			   .catch(this.handleError);
-	// }
-
-	// getElectionDetails(id: number): Observable<any> {
-	// 	var singleElectionUrl = this.electionDetailsUrl + "/" + id;
-	// 	return this.http.get(singleElectionUrl)
-	// 			   .map(this.extractData)
-	// 			   .catch(this.handleError);
-	// }
+	getApp(id: number): Observable<any> {
+	 	var singleAppUrl = this.appUrl + "/" + id;
+	 	return this.http.get(singleAppUrl)
+	 			   .map(this.extractData)
+	 			   .catch(this.handleError);
+	}
 
 	// getTestOutput(): Observable<any> {
 	// 	return this.http.get(this.testOutputUrl)
 	// 			   .map(this.extractTestData)
-	// 			   .catch(this.handleError);
-	// }
-
-	// getImageData(query: string):  Observable<any> {
-	// 	var queryUrl = this.imageUrl + query;
-	// 	return this.http.get(queryUrl)
-	// 			   .map(this.extractData)
 	// 			   .catch(this.handleError);
 	// }
 

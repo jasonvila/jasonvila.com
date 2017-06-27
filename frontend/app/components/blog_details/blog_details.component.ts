@@ -37,7 +37,7 @@ export class BlogDetailsComponent {
 				this.data = blog;
 				var div = document.getElementById('container');
 				for(let e of this.data){
-					div.innerHTML = "<p>" + e.content + "</p>";
+					div.innerHTML = "<h3>" + e.title + "</h3><h4>" + e.category+ "</h4><p>" + e.content + "<br/><br/></br></p>";
 				}
 				
 				this.loading = false;
