@@ -9,10 +9,10 @@ export class AllServicesService {
 	// // All the API URLs
 	private blogUrl = 'http://localhost:5000/api/blog';
 	private appUrl = 'http://localhost:5000/api/app';
-	private appUrl = 'http://localhost:5000/api/data';
+	private dataUrl = 'http://localhost:5000/api/data';
 	// private blogUrl = 'http://jasonvila.com:5000/api/blog';
-	// private blogUrl = 'http://jasonvila.com:5000/api/data';
 	// private appUrl = 'http://jasonvila.com:5000/api/app';
+	// private dataUrl = 'http://jasonvila.com:5000/api/data';
 	// private testOutputUrl = 'api/test';
 	// private searchResultsAndURL = 'api/s_and?term=';
 	// private searchResultsOrURL = 'api/s_or?term=';
@@ -46,9 +46,16 @@ export class AllServicesService {
 	}
 
 	getAllData(): Observable<any>{
-		return this.http.get(this.appUrl)
+		return this.http.get(this.dataUrl)
 								 .map(this.extractData)
 								 .catch(this.handleError);
+	}
+
+	getData(id: number): Observable<any> {
+	 	var singleDataUrl = this.dataUrl + "/" + id;
+	 	return this.http.get(singleDataUrl)
+	 			   .map(this.extractData)
+	 			   .catch(this.handleError);
 	}
 
 	// getTestOutput(): Observable<any> {
