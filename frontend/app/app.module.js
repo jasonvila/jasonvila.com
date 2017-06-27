@@ -22,6 +22,7 @@ const blog_component_1 = require("./components/blog/blog.component");
 const blog_details_component_1 = require("./components/blog_details/blog_details.component");
 const apps_details_component_1 = require("./components/apps_details/apps_details.component");
 const data_details_component_1 = require("./components/data_details/data_details.component");
+const misc_details_component_1 = require("./components/misc_details/misc_details.component");
 const not_found_component_1 = require("./components/page_not_found/not_found.component");
 let AppModule = class AppModule {
 };
@@ -73,6 +74,10 @@ AppModule = __decorate([
                     component: misc_component_1.MiscComponent
                 },
                 {
+                    path: 'misc/:id',
+                    component: misc_details_component_1.MiscDetailsComponent
+                },
+                {
                     path: '404',
                     component: not_found_component_1.PageNotFoundComponent
                 },
@@ -94,6 +99,7 @@ AppModule = __decorate([
             blog_details_component_1.BlogDetailsComponent,
             apps_details_component_1.AppsDetailsComponent,
             data_details_component_1.DataDetailsComponent,
+            misc_details_component_1.MiscDetailsComponent,
             not_found_component_1.PageNotFoundComponent
         ],
         bootstrap: [app_component_1.AppComponent]

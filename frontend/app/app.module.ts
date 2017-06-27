@@ -15,6 +15,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { BlogDetailsComponent} from './components/blog_details/blog_details.component';
 import { AppsDetailsComponent} from './components/apps_details/apps_details.component';
 import { DataDetailsComponent} from './components/data_details/data_details.component';
+import { MiscDetailsComponent} from './components/misc_details/misc_details.component';
 import { PageNotFoundComponent } from './components/page_not_found/not_found.component';
 
 @NgModule({
@@ -63,6 +64,10 @@ import { PageNotFoundComponent } from './components/page_not_found/not_found.com
         path: 'misc',
         component: MiscComponent
       },
+      { 
+        path: 'misc/:id',
+        component: MiscDetailsComponent
+      },
       {
         path: '404',
         component: PageNotFoundComponent
@@ -85,6 +90,7 @@ import { PageNotFoundComponent } from './components/page_not_found/not_found.com
     BlogDetailsComponent,
     AppsDetailsComponent,
     DataDetailsComponent,
+    MiscDetailsComponent,
     PageNotFoundComponent
   ],
   bootstrap: [ AppComponent ]

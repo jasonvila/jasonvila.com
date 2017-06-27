@@ -66,6 +66,13 @@ export class AllServicesService {
 								 .catch(this.handleError);
 	}
 
+	getMisc(id: number): Observable<any> {
+	 	var singleMiscUrl = this.miscUrl + "/" + id;
+	 	return this.http.get(singleMiscUrl)
+	 			   .map(this.extractData)
+	 			   .catch(this.handleError);
+	}
+
 	// getTestOutput(): Observable<any> {
 	// 	return this.http.get(this.testOutputUrl)
 	// 			   .map(this.extractTestData)

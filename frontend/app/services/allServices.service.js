@@ -68,6 +68,12 @@ let AllServicesService = class AllServicesService {
             .map(this.extractData)
             .catch(this.handleError);
     }
+    getMisc(id) {
+        var singleMiscUrl = this.miscUrl + "/" + id;
+        return this.http.get(singleMiscUrl)
+            .map(this.extractData)
+            .catch(this.handleError);
+    }
     // getTestOutput(): Observable<any> {
     // 	return this.http.get(this.testOutputUrl)
     // 			   .map(this.extractTestData)
