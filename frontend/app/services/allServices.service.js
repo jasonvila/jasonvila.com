@@ -16,6 +16,7 @@ require("rxjs/add/operator/map");
 require("rxjs/add/operator/catch");
 let AllServicesService = class AllServicesService {
     // private blogUrl = 'http://jasonvila.com:5000/api/blog';
+    // private blogUrl = 'http://jasonvila.com:5000/api/data';
     // private appUrl = 'http://jasonvila.com:5000/api/app';
     // private testOutputUrl = 'api/test';
     // private searchResultsAndURL = 'api/s_and?term=';
@@ -25,6 +26,7 @@ let AllServicesService = class AllServicesService {
         // // All the API URLs
         this.blogUrl = 'http://localhost:5000/api/blog';
         this.appUrl = 'http://localhost:5000/api/app';
+        this.appUrl = 'http://localhost:5000/api/data';
     }
     getAllBlogs() {
         return this.http.get(this.blogUrl)
@@ -45,6 +47,11 @@ let AllServicesService = class AllServicesService {
     getApp(id) {
         var singleAppUrl = this.appUrl + "/" + id;
         return this.http.get(singleAppUrl)
+            .map(this.extractData)
+            .catch(this.handleError);
+    }
+    getAllData() {
+        return this.http.get(this.appUrl)
             .map(this.extractData)
             .catch(this.handleError);
     }
