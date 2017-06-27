@@ -20,6 +20,7 @@ const misc_component_1 = require("./components/misc/misc.component");
 const data_component_1 = require("./components/data/data.component");
 const blog_component_1 = require("./components/blog/blog.component");
 const blog_details_component_1 = require("./components/blog_details/blog_details.component");
+const apps_details_component_1 = require("./components/apps_details/apps_details.component");
 const not_found_component_1 = require("./components/page_not_found/not_found.component");
 let AppModule = class AppModule {
 };
@@ -45,6 +46,10 @@ AppModule = __decorate([
                 {
                     path: 'apps',
                     component: apps_component_1.AppsComponent
+                },
+                {
+                    path: 'apps/:id',
+                    component: apps_details_component_1.AppsDetailsComponent
                 },
                 {
                     path: 'blog',
@@ -82,6 +87,7 @@ AppModule = __decorate([
             data_component_1.DataComponent,
             blog_component_1.BlogComponent,
             blog_details_component_1.BlogDetailsComponent,
+            apps_details_component_1.AppsDetailsComponent,
             not_found_component_1.PageNotFoundComponent
         ],
         bootstrap: [app_component_1.AppComponent]
