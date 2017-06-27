@@ -1,6 +1,7 @@
 {
 	"app 1" : {
 		"title" : "app1",
+		"category": "Android",
 		"link" : "#",
 		"date" : "20170617",
 		"content" : "fasdfasdfsadfasdfasdfas",
@@ -8,6 +9,7 @@
 	},
 	"app 2" : {
 		"title" : "app2",
+		"category": "Android",
 		"link" : "#",
 		"date" : "20170618",
 		"content" : "fasdfasdfsadfasdfasdfas",
@@ -15,6 +17,7 @@
 	},
 	"app 3" : {
 		"title" : "app3",
+		"category": "Android",
 		"link" : "#",
 		"date" : "20170619",
 		"content" : "fasdfasdfsadfasdfasdfas",
@@ -22,6 +25,7 @@
 	},
 	"app 4" : {
 		"title" : "app4",
+		"category": "Android",
 		"link" : "#",
 		"date" : "20170620",
 		"content" : "fasdfasdfsadfasdfasdfas",
@@ -29,6 +33,7 @@
 	},
 	"app 5" : {
 		"title" : "app5",
+		"category": "Android",
 		"link" : "#",
 		"date" : "20170621",
 		"content" : "fasdfasdfsadfasdfasdfas",

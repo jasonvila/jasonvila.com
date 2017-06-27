@@ -33,7 +33,7 @@ def fill_apps_table():
 	for key in APPS_JSON.keys():
 		counter+= 1
 		print (str(key))
-		temp_app = App(title=APPS_JSON[key]['title'],link=APPS_JSON[key]['link'],date=APPS_JSON[key]['date'],content=APPS_JSON[key]['content'],image=APPS_JSON[key]['image'])
+		temp_app = App(title=APPS_JSON[key]['title'],category=APPS_JSON[key]["category"],link=APPS_JSON[key]['link'],date=APPS_JSON[key]['date'],content=APPS_JSON[key]['content'],image=APPS_JSON[key]['image'])
 		database.session.add(temp_app)
 	database.session.commit()
 

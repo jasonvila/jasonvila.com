@@ -40,7 +40,8 @@ export class AppsComponent {
 					} else{
 						con = e.content;
 					}
-					div.innerHTML = div.innerHTML + "<li class='app-entry'><a href='/app/"+ e.id +"' class='app-entry-link'><div class='app-entry-container'><h3 class='app-entry-title app-entry-element'>" + e.title + "</h3><h4 class='app-entry-category app-entry-element'>" + e.category + "</h4><p class='app-entry-content app-entry-element'>" + con + "</p></div></a><hr/></li>";
+					var date = e.date;
+					div.innerHTML = div.innerHTML + "<li class='app-entry'><a href='/app/"+ e.id +"' class='app-entry-link'><div class='app-entry-container'><h3 class='app-entry-title app-entry-element'>" + e.title + "</h3><h4 class='app-entry-category app-entry-element'>" + date.substring(4,6) + "/" + date.substring(6,8) + "/" + date.substring(0,4) + "</h4><h4 class='app-entry-category app-entry-element'>" + e.category + "</h4><a href='" + e.link + "' class='app-entry-link'><h4 class='app-entry-category app-entry-element'>Github: " + e.link + "</h4></a><p class='app-entry-content app-entry-element'>" + con + "</p></div></a><hr/></li>";
 				}
 				console.log(this.t)
 				this.loading = false;
