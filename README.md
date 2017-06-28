@@ -1,6 +1,7 @@
 # jasonvila.com
 
 Database
+-----------
 user = postgres
 database = jvdb
 database type : postgresql
@@ -67,35 +68,43 @@ su root
 pip3 install flask_restless
 
 
-To let it continue running:
+To run without hangup
+--------------------------
 nohup npm start &
 nohup python3 application.py &
 
-to kill python3 process:
-ps -fA | grep python
+to kill python3 process
+------------------------
+ps -fA | grep python3
 second number is process number.
 kill numb
 you'll want to kill the one that isn't process numb=1
 
+Files
+-------
 Files on server are in /home/jasonvila.com
 This is because you can't access root folder with any other user
 postgres user can't access root folder, thus can't run backend in root folder, have to run in home folder.
 
+Changing Ports - frontend
+--------------------------
 To change ports or what can be served, change bs-config.json file.
 
-To run frontend:
+To run frontend
+---------------
 npm install
 nohup npm start &
 
-To run backend:
+To run backend
+---------------
 nohup python3 application.py &
 python3 database_parser.py --> this is for inserting data in database.
 
+Misc
+------------
 postgresql is already running in background. - user is postgres.
 
 primeng is renderer for tables, want to edit this to make your own custom
-
-need to update blog.json - wrong data for 2016116 - needs to be 20161106
 
 fixed whole issue with css by add ViewEncapsulation.None in @Component
 
@@ -103,8 +112,27 @@ changed dynamic load with just using document.getElementById and changing the in
 
 Need to update database.
 
-Check why \n not showing.
+\n doesn't show up in html as new lines - just use br tag
 
 using sortedcontainers.SortedDict for sorting the results.
 
 to make flask public, just change application.run() to application.run(host='0.0.0.0') -- this fixes the cors issue. - also flask_cors - the cross origin can be fixed so that any website can request it.
+
+To make Public
+---------------
+change bs-config.json to port 80
+change application.py to run applicaiton on host='0.0.0.0'
+change frontend/app/services/allServices.service.ts to from localhost urls to jasonvila.com urls.
+
+To update database
+------------------
+update apps.json, data.json, miscs.json, blogs.json
+run database_parser.py
+
+To update database models
+--------------------------
+update models.py model classes
+update database_parser.py
+
+To add new Components
+------------------------

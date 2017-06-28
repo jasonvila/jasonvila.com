@@ -27,4 +27,6 @@ def create_app():
 application = create_app()
 
 if __name__ == "__main__":
+	# To run publicly, comment first below, and uncomment the line containing 'host='
 	application.run()
+	# application.run(host='0.0.0.0')

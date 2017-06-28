@@ -1,3 +1,5 @@
 {
+	// To make public, uncomment port 80 and comment port 3000.
+	// "port": 80
   "port": 3000
 }
