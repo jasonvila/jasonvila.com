@@ -136,7 +136,17 @@ update database_parser.py
 
 To add new Components
 ------------------------
+Add new folder in components folder (named after your new component).
+Create 3 files in new component folder.
+new_component.component.ts file
+new_component.html file
+new_component.css file
 
+Copy html, css, and ts file content from other component folders into these files
+Update services/allServices.service.ts file if there are any new apis the new component needs
+update app.module.ts to import, route (RouterModule), and declare (declarations) the component.
+
+update app.js by running npm run build
 
 To customize webpack
 ------------------------
@@ -149,3 +159,6 @@ To rebuild webpack
 -----------------------
 npm run build
 
+To shutdown droplet
+----------------------
+sudo shutdown -h now
