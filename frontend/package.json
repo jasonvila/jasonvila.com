@@ -5,6 +5,7 @@
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "lite": "lite-server",
     "tsc": "tsc",
+    "build": "webpack -p",
     "tsc:w": "tsc -w"
   },
   "licenses": [

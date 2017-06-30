@@ -17,6 +17,7 @@ import { AppsDetailsComponent} from './components/apps_details/apps_details.comp
 import { DataDetailsComponent} from './components/data_details/data_details.component';
 import { MiscDetailsComponent} from './components/misc_details/misc_details.component';
 import { PageNotFoundComponent } from './components/page_not_found/not_found.component';
+import { AllServicesService } from './services/allServices.service';
 
 @NgModule({
   imports: [

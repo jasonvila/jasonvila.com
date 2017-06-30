@@ -136,3 +136,16 @@ update database_parser.py
 
 To add new Components
 ------------------------
+
+
+To customize webpack
+------------------------
+entry - entry file that needs to be crawled for imports and combined into one js file.
+output - the one js file being outputted to
+module - the extension and the loader for that extension
+resolve - the extensions to resolve with the following loaders.
+
+To rebuild webpack
+-----------------------
+npm run build
+
