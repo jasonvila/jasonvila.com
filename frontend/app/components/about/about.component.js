@@ -13,8 +13,8 @@ let AboutComponent = class AboutComponent {
 AboutComponent = __decorate([
     core_1.Component({
         selector: 'about',
-        templateUrl: 'app/components/about/about.html',
-        styleUrls: ['app/components/about/about.css'],
+        templateUrl: '../app/components/about/about.html',
+        styleUrls: ['../app/components/about/about.css'],
         providers: [
             allServices_service_1.AllServicesService
         ]

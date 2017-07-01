@@ -3,7 +3,7 @@ import sys
 import json
 from flask import Blueprint, send_from_directory, request
 from flask_cors import CORS, cross_origin
-import query
+import query, searchdb
 
 frontend = Blueprint('frontend', __name__)
 
@@ -45,3 +45,12 @@ def getData(path=""):
 def getRecent(path=""):
 	return query.getRecent()
 	
+@frontend.route('/api/s_and')
+def search_and(path=""):
+	term = request.args.get("term")
+	return searchdb.search_and(term)
+
+@frontend.route('/api/s_or')
+def search_or(path=""):
+	term = request.args.get("term")
+	return searchdb.search_or(term)

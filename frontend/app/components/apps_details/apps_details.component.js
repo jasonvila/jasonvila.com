@@ -41,8 +41,8 @@ let AppsDetailsComponent = class AppsDetailsComponent {
 AppsDetailsComponent = __decorate([
     core_1.Component({
         selector: 'apps-details',
-        templateUrl: 'app/components/apps_details/apps_details.html',
-        styleUrls: ['app/components/apps_details/apps_details.css'],
+        templateUrl: '../app/components/apps_details/apps_details.html',
+        styleUrls: ['../app/components/apps_details/apps_details.css'],
         encapsulation: core_1.ViewEncapsulation.None,
         providers: [
             allServices_service_1.AllServicesService

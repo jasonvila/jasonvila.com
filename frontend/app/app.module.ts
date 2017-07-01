@@ -12,6 +12,7 @@ import { AppsComponent } from './components/apps/apps.component';
 import { MiscComponent } from './components/misc/misc.component';
 import { DataComponent } from './components/data/data.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { SearchResultsTableComponent } from './components/search_results_table/search_results_table.component';
 import { BlogDetailsComponent} from './components/blog_details/blog_details.component';
 import { AppsDetailsComponent} from './components/apps_details/apps_details.component';
 import { DataDetailsComponent} from './components/data_details/data_details.component';
@@ -70,6 +71,10 @@ import { AllServicesService } from './services/allServices.service';
         component: MiscDetailsComponent
       },
       {
+        path: 'search',
+        component: SearchResultsTableComponent
+      },
+      {
         path: '404',
         component: PageNotFoundComponent
       },
@@ -92,6 +97,7 @@ import { AllServicesService } from './services/allServices.service';
     AppsDetailsComponent,
     DataDetailsComponent,
     MiscDetailsComponent,
+    SearchResultsTableComponent,
     PageNotFoundComponent
   ],
   bootstrap: [ AppComponent ]

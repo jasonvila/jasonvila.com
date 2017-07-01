@@ -19,6 +19,7 @@ const apps_component_1 = require("./components/apps/apps.component");
 const misc_component_1 = require("./components/misc/misc.component");
 const data_component_1 = require("./components/data/data.component");
 const blog_component_1 = require("./components/blog/blog.component");
+const search_results_table_component_1 = require("./components/search_results_table/search_results_table.component");
 const blog_details_component_1 = require("./components/blog_details/blog_details.component");
 const apps_details_component_1 = require("./components/apps_details/apps_details.component");
 const data_details_component_1 = require("./components/data_details/data_details.component");
@@ -78,6 +79,10 @@ AppModule = __decorate([
                     component: misc_details_component_1.MiscDetailsComponent
                 },
                 {
+                    path: 'search',
+                    component: search_results_table_component_1.SearchResultsTableComponent
+                },
+                {
                     path: '404',
                     component: not_found_component_1.PageNotFoundComponent
                 },
@@ -100,6 +105,7 @@ AppModule = __decorate([
             apps_details_component_1.AppsDetailsComponent,
             data_details_component_1.DataDetailsComponent,
             misc_details_component_1.MiscDetailsComponent,
+            search_results_table_component_1.SearchResultsTableComponent,
             not_found_component_1.PageNotFoundComponent
         ],
         bootstrap: [app_component_1.AppComponent]

@@ -12,14 +12,16 @@ export class AllServicesService {
 	private dataUrl = 'http://localhost:5000/api/data';
 	private miscUrl = 'http://localhost:5000/api/misc';
 	private homeUrl = 'http://localhost:5000/api/recent';
+	private searchResultsAndURL = 'http://localhost:5000/api/s_and?term=';
+	private searchResultsOrURL = 'http://localhost:5000/api/s_or?term=';
 	// private blogUrl = 'http://jasonvila.com:5000/api/blog';
 	// private appUrl = 'http://jasonvila.com:5000/api/app';
 	// private dataUrl = 'http://jasonvila.com:5000/api/data';
 	// private miscUrl = 'http://jasonvila.com:5000/api/misc';
 	// private homeUrl = 'http://jasonvila.com:5000/api/recent';
 	// private testOutputUrl = 'api/test';
-	// private searchResultsAndURL = 'api/s_and?term=';
-	// private searchResultsOrURL = 'api/s_or?term=';
+	// private searchResultsAndURL = 'http://jasonvila.com:5000/api/s_and?term=';
+	// private searchResultsOrURL = 'http://jasonvila.com:5000/api/s_or?term=';
 
 	constructor(private http: Http) {}
 
@@ -87,25 +89,26 @@ export class AllServicesService {
 	// 			   .catch(this.handleError);
 	// }
 
-	// getAllSearchResults(str: string, searchType : string): Observable<any> {
-	// 	var replaced : string;
-	// 	if(str != null){
-	// 		replaced = str.replace('/ /g','%20');
-	// 	}
-	// 	var searchURL : string;
-	// 	if(searchType === "AND"){
-	// 		searchURL = this.searchResultsAndURL + replaced;
-	// 		return this.http.get(searchURL)
-	// 				   .map(this.extractData)
-	// 				   .catch(this.handleError);
-	// 	}
-	// 	else{
-	// 		searchURL = this.searchResultsOrURL + replaced;
-	// 		return this.http.get(searchURL)
-	// 					   .map(this.extractData)
-	// 					   .catch(this.handleError);
-	// 	}
-	// }
+	getAllSearchResults(str: string, searchType : string): Observable<any> {
+	 	var replaced : string;
+	 	if(str != null){
+	 		replaced = str.replace('+','%20');
+	 	}
+	 	var searchURL : string;
+	 	if(searchType === "AND"){
+	 		searchURL = this.searchResultsAndURL + replaced;
+	 		console.log("searchUrl: " + searchURL)
+	 		return this.http.get(searchURL)
+	 				   .map(this.extractData)
+	 				   .catch(this.handleError);
+	 	}
+	 	else{
+	 		searchURL = this.searchResultsOrURL + replaced;
+	 		return this.http.get(searchURL)
+	 					   .map(this.extractData)
+	 					   .catch(this.handleError);
+	 	}
+	}
 
 
 

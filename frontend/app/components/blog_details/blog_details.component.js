@@ -41,8 +41,8 @@ let BlogDetailsComponent = class BlogDetailsComponent {
 BlogDetailsComponent = __decorate([
     core_1.Component({
         selector: 'blog-details',
-        templateUrl: 'app/components/blog_details/blog_details.html',
-        styleUrls: ['app/components/blog_details/blog_details.css'],
+        templateUrl: '../app/components/blog_details/blog_details.html',
+        styleUrls: ['../app/components/blog_details/blog_details.css'],
         encapsulation: core_1.ViewEncapsulation.None,
         providers: [
             allServices_service_1.AllServicesService

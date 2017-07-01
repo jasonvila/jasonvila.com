@@ -41,8 +41,8 @@ let DataDetailsComponent = class DataDetailsComponent {
 DataDetailsComponent = __decorate([
     core_1.Component({
         selector: 'data-details',
-        templateUrl: 'app/components/data_details/data_details.html',
-        styleUrls: ['app/components/data_details/data_details.css'],
+        templateUrl: '../app/components/data_details/data_details.html',
+        styleUrls: ['../app/components/data_details/data_details.css'],
         encapsulation: core_1.ViewEncapsulation.None,
         providers: [
             allServices_service_1.AllServicesService

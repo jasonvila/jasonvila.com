@@ -3,8 +3,8 @@ import { AllServicesService } from '../../services/allServices.service';
 
 @Component({
   selector: 'about',
-  templateUrl: 'app/components/about/about.html',
-  styleUrls: ['app/components/about/about.css'],
+  templateUrl: '../app/components/about/about.html',
+  styleUrls: ['../app/components/about/about.css'],
   providers: [
 	AllServicesService
   ]

@@ -3,8 +3,8 @@ import { AllServicesService } from '../../services/allServices.service';
 
 @Component({
   selector: 'blog',
-  templateUrl: 'app/components/blog/blog.html',
-  styleUrls: ['app/components/blog/blog.css'],
+  templateUrl: '../app/components/blog/blog.html',
+  styleUrls: ['../app/components/blog/blog.css'],
   encapsulation: ViewEncapsulation.None,
   providers: [
 	AllServicesService

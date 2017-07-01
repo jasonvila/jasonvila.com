@@ -47,8 +47,8 @@ let DataComponent = class DataComponent {
 DataComponent = __decorate([
     core_1.Component({
         selector: 'data',
-        templateUrl: 'app/components/data/data.html',
-        styleUrls: ['app/components/data/data.css'],
+        templateUrl: '../app/components/data/data.html',
+        styleUrls: ['../app/components/data/data.css'],
         encapsulation: core_1.ViewEncapsulation.None,
         providers: [
             allServices_service_1.AllServicesService

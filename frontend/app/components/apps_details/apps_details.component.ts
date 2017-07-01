@@ -4,8 +4,8 @@ import { AllServicesService } from '../../services/allServices.service';
 
 @Component({
   selector: 'apps-details',
-  templateUrl: 'app/components/apps_details/apps_details.html',
-  styleUrls: ['app/components/apps_details/apps_details.css'],
+  templateUrl: '../app/components/apps_details/apps_details.html',
+  styleUrls: ['../app/components/apps_details/apps_details.css'],
   encapsulation: ViewEncapsulation.None,
   providers: [
 	AllServicesService

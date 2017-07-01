@@ -12,8 +12,8 @@ let PageNotFoundComponent = class PageNotFoundComponent {
 PageNotFoundComponent = __decorate([
     core_1.Component({
         selector: 'page-not-found',
-        templateUrl: 'app/components/page_not_found/not_found.html',
-        styleUrls: ['app/components/page_not_found/not_found.css']
+        templateUrl: '../app/components/page_not_found/not_found.html',
+        styleUrls: ['../app/components/page_not_found/not_found.css']
     })
 ], PageNotFoundComponent);
 exports.PageNotFoundComponent = PageNotFoundComponent;

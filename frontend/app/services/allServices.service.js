@@ -21,8 +21,8 @@ let AllServicesService = class AllServicesService {
     // private miscUrl = 'http://jasonvila.com:5000/api/misc';
     // private homeUrl = 'http://jasonvila.com:5000/api/recent';
     // private testOutputUrl = 'api/test';
-    // private searchResultsAndURL = 'api/s_and?term=';
-    // private searchResultsOrURL = 'api/s_or?term=';
+    // private searchResultsAndURL = 'http://jasonvila.com:5000/api/s_and?term=';
+    // private searchResultsOrURL = 'http://jasonvila.com:5000/api/s_or?term=';
     constructor(http) {
         this.http = http;
         // // All the API URLs
@@ -31,6 +31,8 @@ let AllServicesService = class AllServicesService {
         this.dataUrl = 'http://localhost:5000/api/data';
         this.miscUrl = 'http://localhost:5000/api/misc';
         this.homeUrl = 'http://localhost:5000/api/recent';
+        this.searchResultsAndURL = 'http://localhost:5000/api/s_and?term=';
+        this.searchResultsOrURL = 'http://localhost:5000/api/s_or?term=';
     }
     getAllBlogs() {
         return this.http.get(this.blogUrl)
@@ -86,25 +88,26 @@ let AllServicesService = class AllServicesService {
     // 			   .map(this.extractTestData)
     // 			   .catch(this.handleError);
     // }
-    // getAllSearchResults(str: string, searchType : string): Observable<any> {
-    // 	var replaced : string;
-    // 	if(str != null){
-    // 		replaced = str.replace('/ /g','%20');
-    // 	}
-    // 	var searchURL : string;
-    // 	if(searchType === "AND"){
-    // 		searchURL = this.searchResultsAndURL + replaced;
-    // 		return this.http.get(searchURL)
-    // 				   .map(this.extractData)
-    // 				   .catch(this.handleError);
-    // 	}
-    // 	else{
-    // 		searchURL = this.searchResultsOrURL + replaced;
-    // 		return this.http.get(searchURL)
-    // 					   .map(this.extractData)
-    // 					   .catch(this.handleError);
-    // 	}
-    // }
+    getAllSearchResults(str, searchType) {
+        var replaced;
+        if (str != null) {
+            replaced = str.replace('+', '%20');
+        }
+        var searchURL;
+        if (searchType === "AND") {
+            searchURL = this.searchResultsAndURL + replaced;
+            console.log("searchUrl: " + searchURL);
+            return this.http.get(searchURL)
+                .map(this.extractData)
+                .catch(this.handleError);
+        }
+        else {
+            searchURL = this.searchResultsOrURL + replaced;
+            return this.http.get(searchURL)
+                .map(this.extractData)
+                .catch(this.handleError);
+        }
+    }
     extractData(res) {
         let body = res.json();
         return body.objects || body || {};

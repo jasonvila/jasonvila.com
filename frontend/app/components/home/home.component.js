@@ -47,8 +47,8 @@ let HomeComponent = class HomeComponent {
 HomeComponent = __decorate([
     core_1.Component({
         selector: 'home',
-        templateUrl: 'app/components/home/home.html',
-        styleUrls: ['app/components/home/home.css'],
+        templateUrl: '../app/components/home/home.html',
+        styleUrls: ['../app/components/home/home.css'],
         encapsulation: core_1.ViewEncapsulation.None,
         providers: [
             allServices_service_1.AllServicesService

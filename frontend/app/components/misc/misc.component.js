@@ -47,8 +47,8 @@ let MiscComponent = class MiscComponent {
 MiscComponent = __decorate([
     core_1.Component({
         selector: 'misc',
-        templateUrl: 'app/components/misc/misc.html',
-        styleUrls: ['app/components/misc/misc.css'],
+        templateUrl: '../app/components/misc/misc.html',
+        styleUrls: ['../app/components/misc/misc.css'],
         encapsulation: core_1.ViewEncapsulation.None,
         providers: [
             allServices_service_1.AllServicesService

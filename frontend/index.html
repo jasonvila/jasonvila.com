@@ -54,6 +54,13 @@
       }).catch(console.error.bind(console));
   </script>
  -->
+ <script>
+    function searchSubmit(event){
+        event.preventDefault();
+        var searchText = document.getElementById("headerSearchBox").value;
+        location.href = "/search?term=" + searchText;
+    }
+ </script>
   <style>
     #loader {
       position: absolute;
@@ -131,12 +138,12 @@
                     <li><a class="navbar-text navbar-text-menuitems" href="/misc">Misc Projects</a></li>
               </ul>
               <div>
-              <form class="navbar-form navbar-right navbar-input-group" role="search" >
+              <form class="navbar-form navbar-right navbar-input-group" role="search" action="/search">
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search" id="headerSearchBox" (keydown.enter)="searchSubmit($event)">
+                  <input type="text" name="term" class="form-control" placeholder="Search" id="headerSearchBox">
                   <!-- Hitting Enter doesn't do produce what I want -->
                   <span class="input-group-btn">
-                    <button type="button" class="btn btn-default" id="headerSearchSubmit" (click)="searchSubmit($event)" >
+                    <button type="button" class="btn btn-default" id="headerSearchSubmit" >
                       <span class="glyphicon glyphicon-search"></span>
                     </button>
                   </span>

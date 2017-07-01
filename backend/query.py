@@ -1,6 +1,7 @@
 import json
 from models import Blog, App, Data, Misc
 from sortedcontainers import SortedDict
+import searchdb
 
 def getBlogs():
 	blog_list = list()
@@ -189,4 +190,3 @@ def getRecent():
 	ret["page"] = 1
 	ret["total_pages"] = 1
 	return json.dumps(ret)
-

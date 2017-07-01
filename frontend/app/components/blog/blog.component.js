@@ -47,8 +47,8 @@ let BlogComponent = class BlogComponent {
 BlogComponent = __decorate([
     core_1.Component({
         selector: 'blog',
-        templateUrl: 'app/components/blog/blog.html',
-        styleUrls: ['app/components/blog/blog.css'],
+        templateUrl: '../app/components/blog/blog.html',
+        styleUrls: ['../app/components/blog/blog.css'],
         encapsulation: core_1.ViewEncapsulation.None,
         providers: [
             allServices_service_1.AllServicesService
