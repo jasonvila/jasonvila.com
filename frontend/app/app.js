@@ -57145,10 +57145,12 @@ let SearchResultsTableComponent = class SearchResultsTableComponent {
         this.output = "";
         this.title = "Search";
         this.loading = true;
-        this.andSelected = true;
+        this.andSelected = false;
     }
     ngOnInit() {
         this.route.queryParams.map(params => params['term']).subscribe(value => this.searchTerm = value);
+        var orButton = document.getElementById("orButton");
+        var andButton = document.getElementById("andButton");
         (this.andSelected) ? this.andClicked() : this.orClicked();
     }
     getAllSearchResults(searchType) {
@@ -57169,7 +57171,7 @@ let SearchResultsTableComponent = class SearchResultsTableComponent {
                     con = e.content;
                 }
                 var date = e.date;
-                div.innerHTML = div.innerHTML + "<li class='app-entry'><a href='/apps/" + e.id + "' class='app-entry-link'><div class='app-entry-container'><h3 class='app-entry-title app-entry-element'>" + e.title + "</h3><h4 class='app-entry-category app-entry-element'>" + date.substring(4, 6) + "/" + date.substring(6, 8) + "/" + date.substring(0, 4) + "</h4><h4 class='app-entry-category app-entry-element'>" + e.category + "</h4><p class='app-entry-content app-entry-element'>" + con + "</p></div></a><hr/></li>";
+                div.innerHTML = div.innerHTML + "<li class='search-entry'><a href='/searchs/" + e.id + "' class='search-entry-link'><div class='search-entry-container'><h3 class='search-entry-title search-entry-element'>" + e.title + "</h3><h4 class='search-entry-category search-entry-element'>" + date.substring(4, 6) + "/" + date.substring(6, 8) + "/" + date.substring(0, 4) + "</h4><h4 class='search-entry-category search-entry-element'>" + e.category + "</h4><p class='search-entry-content search-entry-element'>" + con + "</p></div></a><hr/></li>";
             }
             // // console.log(this.t)
             // this.loading = false;
@@ -57177,20 +57179,16 @@ let SearchResultsTableComponent = class SearchResultsTableComponent {
     }
     andClicked() {
         this.andSelected = true;
-        document.getElementById("andButton").style.background = "#E0162B";
-        document.getElementById("orButton").style.background = "#0052A5";
         this.getAllSearchResults("AND");
     }
     orClicked() {
         this.andSelected = false;
-        document.getElementById("andButton").style.background = "#0052A5";
-        document.getElementById("orButton").style.background = "#E0162B";
         this.getAllSearchResults("OR");
     }
 };
 SearchResultsTableComponent = __decorate([
     core_1.Component({
-        selector: 'search',
+        selector: 'my-app',
         templateUrl: '../app/components/search_results_table/search_results_table.html',
         styleUrls: ['../app/components/search_results_table/search_results_table.css'],
         encapsulation: core_1.ViewEncapsulation.None,
