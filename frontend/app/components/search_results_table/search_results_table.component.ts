@@ -18,17 +18,18 @@ export class SearchResultsTableComponent {
 	data: any[];
 	loading = true;
 	t: string;
+	topicSelected = "Blogs";
+	topicUrl = "blog";
 
 	private searchTerm: string;
 	private andSelected =  false;
+	
 	private sub: any;
 
 	constructor(private route: ActivatedRoute, private allServicesService: AllServicesService) {}
 
 	ngOnInit(){
 		this.route.queryParams.map(params => params['term'] ).subscribe(value => this.searchTerm = value);
-		var orButton = document.getElementById("orButton");
-		var andButton = document.getElementById("andButton");
 
 		(this.andSelected) ? this.andClicked() : this.orClicked();
 	}
@@ -42,26 +43,41 @@ export class SearchResultsTableComponent {
 				var div = document.getElementById('search-list');
 				var len = 0;
 				var con = "";
+
+				console.log(this.data)
 				
-				console.log(this.data['Blogs'])
+				console.log(this.data[this.topicSelected])
 				
 				div.innerHTML="";
+				console.log(div.innerHTML);
 
-				for(let e of this.data['Blogs']){
-					console.log(e)
-					if (e.content.length > 500){
-						con = e.content.substring(0,500) + "...";
+				if(this.data[this.topicSelected].length == 0){
+					div.innerHTML = div.innerHTML + "<h4 style='text-align:center;'>No results for " + this.topicSelected + ".</h4>"
+				} else {
 
-					} else{
-						con = e.content;
+					for(let e of this.data[this.topicSelected]){
+						console.log(e)
+						if (e.content.length > 500){
+							con = e.content.substring(0,500) + "...";
+
+						} else{
+							con = e.content;
+						}
+						var date = e.date;
+						div.innerHTML = div.innerHTML + "<li class='search-entry'><a href='/" + this.topicUrl + "/"+ e.id +"' class='search-entry-link'><div class='search-entry-container'><h3 class='search-entry-title search-entry-element'>" + e.title + "</h3><h4 class='search-entry-category search-entry-element'>" + date.substring(4,6) + "/" + date.substring(6,8) + "/" + date.substring(0,4) + "</h4><h4 class='search-entry-category search-entry-element'>" + e.category + "</h4><h4 class='search-entry-category search-entry-element'>Context:</h4>";
+						var count = 1;
+						for(let c of e.context){
+							div.innerHTML = div.innerHTML + "<p class='search-entry-content search-entry-element'>" +count + ") " + c + "</p>";
+							count = count + 1;
+						}
+						div.innerHTML = div.innerHTML + "</div></a><hr/></li>";
 					}
-					var date = e.date;
-					div.innerHTML = div.innerHTML + "<li class='search-entry'><a href='/searchs/"+ e.id +"' class='search-entry-link'><div class='search-entry-container'><h3 class='search-entry-title search-entry-element'>" + e.title + "</h3><h4 class='search-entry-category search-entry-element'>" + date.substring(4,6) + "/" + date.substring(6,8) + "/" + date.substring(0,4) + "</h4><h4 class='search-entry-category search-entry-element'>" + e.category + "</h4><p class='search-entry-content search-entry-element'>" + con + "</p></div></a><hr/></li>";
 				}
 				// // console.log(this.t)
 				// this.loading = false;
 			}, error => this.errorMessage = <any>error)
 	}
+
 	andClicked() {
         this.andSelected = true;
         this.getAllSearchResults("AND");
@@ -70,5 +86,45 @@ export class SearchResultsTableComponent {
      orClicked() {
         this.andSelected = false;
         this.getAllSearchResults("OR");
+	}
+
+	blogsClicked(){
+		this.topicSelected = "Blogs";
+		this.topicUrl = "blog";
+		if(this.andSelected){
+			this.getAllSearchResults("AND");
+		} else{
+			this.getAllSearchResults("OR");
+		}
+	}
+
+	appsClicked(){
+		this.topicSelected = "Apps";
+		this.topicUrl = "apps";
+		if(this.andSelected){
+			this.getAllSearchResults("AND");
+		} else{
+			this.getAllSearchResults("OR");
+		}
+	}
+
+	dataClicked(){
+		this.topicSelected = "Data";
+		this.topicUrl = "data";
+		if(this.andSelected){
+			this.getAllSearchResults("AND");
+		} else{
+			this.getAllSearchResults("OR");
+		}
+	}
+
+	miscClicked(){
+		this.topicSelected = "Miscs";
+		this.topicUrl = "misc";
+		if(this.andSelected){
+			this.getAllSearchResults("AND");
+		} else{
+			this.getAllSearchResults("OR");
+		}
 	}
 }
